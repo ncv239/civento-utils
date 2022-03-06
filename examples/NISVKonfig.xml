@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:Bibliothek Schluessel="NISVKonfig" Rubrik="Vorgangseinstellungdefinition" Version="2.5" xmlns:ns2="">
+    <Metadatendefinition>
+        <EsIndexing>true</EsIndexing>
+        <Objekt Name="NISVKonfig" Datentyp="OBJECT">
+            <Objektfeld>
+                <Darstellung>Sichtbar</Darstellung>
+                <Titel Standard="NISVKonfig"/>
+                <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+            </Objektfeld>
+            <Metadatenfeld Name="LinkAddPerson" Datentyp="STRING">
+                <Textfeld>
+                    <Darstellung>Sichtbar</Darstellung>
+                    <Titel Standard="LinkAddPerson"/>
+                    <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                    <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                    <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                    <Vorbelegung></Vorbelegung>
+                    <AnzahlZeilen>1</AnzahlZeilen>
+                    <IsPasswort>false</IsPasswort>
+                </Textfeld>
+            </Metadatenfeld>
+            <Metadatenfeld Name="LinkAddResource" Datentyp="STRING">
+                <Textfeld>
+                    <Darstellung>Sichtbar</Darstellung>
+                    <Titel Standard="LinkAddResource"/>
+                    <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                    <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                    <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                    <Vorbelegung></Vorbelegung>
+                    <AnzahlZeilen>1</AnzahlZeilen>
+                    <IsPasswort>false</IsPasswort>
+                </Textfeld>
+            </Metadatenfeld>
+            <Metadatenfeld Name="LinkDisplay" Datentyp="STRING">
+                <Textfeld>
+                    <Darstellung>Sichtbar</Darstellung>
+                    <Titel Standard="LinkDisplay"/>
+                    <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                    <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                    <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                    <Vorbelegung></Vorbelegung>
+                    <AnzahlZeilen>1</AnzahlZeilen>
+                    <IsPasswort>false</IsPasswort>
+                </Textfeld>
+            </Metadatenfeld>
+            <Metadatenfeld Name="LinkLinkResourceToPerson" Datentyp="STRING">
+                <Textfeld>
+                    <Darstellung>Sichtbar</Darstellung>
+                    <Titel Standard="LinkLinkResourceToPerson"/>
+                    <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                    <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                    <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                    <Vorbelegung></Vorbelegung>
+                    <AnzahlZeilen>1</AnzahlZeilen>
+                    <IsPasswort>false</IsPasswort>
+                </Textfeld>
+            </Metadatenfeld>
+            <Metadatenfeld Name="LinkLinkPersonToResource" Datentyp="STRING">
+                <Textfeld>
+                    <Darstellung>Sichtbar</Darstellung>
+                    <Titel Standard="LinkLinkPersonToResource"/>
+                    <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                    <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                    <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                    <Vorbelegung></Vorbelegung>
+                    <AnzahlZeilen>1</AnzahlZeilen>
+                    <IsPasswort>false</IsPasswort>
+                </Textfeld>
+            </Metadatenfeld>
+            <Metadatenfeld Name="LinkAcc" Datentyp="STRING">
+                <Textfeld>
+                    <Darstellung>Sichtbar</Darstellung>
+                    <Titel Standard="LinkAcc"/>
+                    <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                    <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                    <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                    <Vorbelegung></Vorbelegung>
+                    <AnzahlZeilen>1</AnzahlZeilen>
+                    <IsPasswort>false</IsPasswort>
+                </Textfeld>
+            </Metadatenfeld>
+            <Metadatenfeld Name="LinkAccVerify" Datentyp="STRING">
+                <Textfeld>
+                    <Darstellung>Sichtbar</Darstellung>
+                    <Titel Standard="LinkAccVerify"/>
+                    <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                    <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                    <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                    <Vorbelegung></Vorbelegung>
+                    <AnzahlZeilen>1</AnzahlZeilen>
+                    <IsPasswort>false</IsPasswort>
+                </Textfeld>
+            </Metadatenfeld>
+            <Metadatenfeld Name="LinkStammdatenAendern" Datentyp="STRING">
+                <Textfeld>
+                    <Darstellung>Sichtbar</Darstellung>
+                    <Titel Standard="LinkStammdatenAendern"/>
+                    <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                    <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                    <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                    <Vorbelegung></Vorbelegung>
+                    <AnzahlZeilen>1</AnzahlZeilen>
+                    <IsPasswort>false</IsPasswort>
+                </Textfeld>
+            </Metadatenfeld>
+            <Metadatenfeld Name="LinkUnlinkPersonFromResource" Datentyp="STRING">
+                <Textfeld>
+                    <Darstellung>Sichtbar</Darstellung>
+                    <Titel Standard="LinkUnlinkPersonFromResource"/>
+                    <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                    <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                    <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                    <Vorbelegung></Vorbelegung>
+                    <AnzahlZeilen>1</AnzahlZeilen>
+                    <IsPasswort>false</IsPasswort>
+                </Textfeld>
+            </Metadatenfeld>
+            <Metadatenfeld Name="LinkNISVStamm" Datentyp="STRING">
+                <Textfeld>
+                    <Darstellung>Sichtbar</Darstellung>
+                    <Titel Standard="LinkNISVStamm"/>
+                    <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                    <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                    <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                    <Vorbelegung></Vorbelegung>
+                    <AnzahlZeilen>1</AnzahlZeilen>
+                    <IsPasswort>false</IsPasswort>
+                </Textfeld>
+            </Metadatenfeld>
+            <Metadatenfeld Name="LinkNISVAddPersonAndResource" Datentyp="STRING">
+                <Textfeld>
+                    <Darstellung>Sichtbar</Darstellung>
+                    <Titel Standard="LinkNISVAddPersonAndResource"/>
+                    <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                    <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                    <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                    <Vorbelegung></Vorbelegung>
+                    <AnzahlZeilen>1</AnzahlZeilen>
+                    <IsPasswort>false</IsPasswort>
+                </Textfeld>
+            </Metadatenfeld>
+        </Objekt>
+    </Metadatendefinition>
+</ns2:Bibliothek>

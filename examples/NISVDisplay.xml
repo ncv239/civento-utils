@@ -1,0 +1,2004 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:Bibliothek Schluessel="NISVDisplay" Rubrik="Vorgangsdefinition" Version="2.5" xmlns:ns2="">
+    <Vorgang>
+        <Name Standard="Anzeige nach der nichtionisierenden Strahlenschutzverordnung (NiSV)"/>
+        <Klasse>FV, Fachvorgang</Klasse>
+        <Belegtext/>
+        <Authentifizierungsart>AY, Anonym</Authentifizierungsart>
+        <EPaymentModus>Payment anbieten</EPaymentModus>
+        <Zustaendigkeit/>
+        <FullWidth>false</FullWidth>
+        <KeineSeqNumGenerierung>false</KeineSeqNumGenerierung>
+        <KeineFachlicheNummerngenerierung>false</KeineFachlicheNummerngenerierung>
+        <Metadatendefinition>
+            <EsIndexing>true</EsIndexing>
+            <Objekt Name="TMP" Datentyp="OBJECT">
+                <Objektfeld>
+                    <Darstellung>Sichtbar</Darstellung>
+                    <Titel Standard="TMP"/>
+                    <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                    <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                    <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                </Objektfeld>
+                <Metadatenfeld Name="personChoice" Datentyp="CHOICE">
+                    <Auswahlfeld>
+                        <Darstellung>Sichtbar</Darstellung>
+                        <Titel Standard="personChoice"/>
+                        <Hilfetext Standard="Please choose the person from the database"/>
+                        <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                        <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                        <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                        <Werteliste>$$tempComboBoxItemList$$</Werteliste>
+                        <Darstellungsart>DropDown</Darstellungsart>
+                        <Ausrichtung>Vertikal</Ausrichtung>
+                        <Wertelisteeingabe>Frei</Wertelisteeingabe>
+                    </Auswahlfeld>
+                </Metadatenfeld>
+                <Metadatenfeld Name="resourceChoice" Datentyp="CHOICE">
+                    <Auswahlfeld>
+                        <Darstellung>Sichtbar</Darstellung>
+                        <Titel Standard="resourceChoice"/>
+                        <Hilfetext Standard="Please choose a resource from the database"/>
+                        <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                        <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                        <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                        <Werteliste>$$tempComboBoxItemList$$</Werteliste>
+                        <Darstellungsart>DropDown</Darstellungsart>
+                        <Ausrichtung>Vertikal</Ausrichtung>
+                        <Wertelisteeingabe>Frei</Wertelisteeingabe>
+                    </Auswahlfeld>
+                </Metadatenfeld>
+                <Metadatenfeld Name="personId" Datentyp="INTEGER">
+                    <Zahlenfeld>
+                        <Darstellung>Sichtbar</Darstellung>
+                        <Titel Standard="personId"/>
+                        <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                        <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                        <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                        <Von>1</Von>
+                    </Zahlenfeld>
+                </Metadatenfeld>
+                <Metadatenfeld Name="resourceId" Datentyp="INTEGER">
+                    <Zahlenfeld>
+                        <Darstellung>Sichtbar</Darstellung>
+                        <Titel Standard="resourceId"/>
+                        <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                        <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                        <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                        <Von>1</Von>
+                    </Zahlenfeld>
+                </Metadatenfeld>
+                <Metadatenfeld Name="personIdStr" Datentyp="STRING">
+                    <Textfeld>
+                        <Darstellung>Sichtbar</Darstellung>
+                        <Titel Standard="personIdStr"/>
+                        <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                        <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                        <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                        <Vorbelegung></Vorbelegung>
+                        <AnzahlZeilen>1</AnzahlZeilen>
+                        <IsPasswort>false</IsPasswort>
+                    </Textfeld>
+                </Metadatenfeld>
+                <Metadatenfeld Name="resourceIdStr" Datentyp="STRING">
+                    <Textfeld>
+                        <Darstellung>Sichtbar</Darstellung>
+                        <Titel Standard="resourceIdStr"/>
+                        <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                        <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                        <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                        <Vorbelegung></Vorbelegung>
+                        <AnzahlZeilen>1</AnzahlZeilen>
+                        <IsPasswort>false</IsPasswort>
+                    </Textfeld>
+                </Metadatenfeld>
+                <Metadatenfeld Name="type" Datentyp="STRING">
+                    <Textfeld>
+                        <Darstellung>NichtSichtbar</Darstellung>
+                        <Titel Standard="type"/>
+                        <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                        <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                        <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                        <Vorbelegung></Vorbelegung>
+                        <AnzahlZeilen>1</AnzahlZeilen>
+                        <IsPasswort>false</IsPasswort>
+                    </Textfeld>
+                </Metadatenfeld>
+                <Metadatenfeld Name="EMailHash" Datentyp="STRING">
+                    <Textfeld>
+                        <Darstellung>Sichtbar</Darstellung>
+                        <Titel Standard="EMailHash"/>
+                        <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                        <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                        <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                        <Vorbelegung></Vorbelegung>
+                        <AnzahlZeilen>1</AnzahlZeilen>
+                        <IsPasswort>false</IsPasswort>
+                    </Textfeld>
+                </Metadatenfeld>
+                <Metadatenfeld Name="case" Datentyp="STRING">
+                    <Textfeld>
+                        <Darstellung>Sichtbar</Darstellung>
+                        <Titel Standard="case"/>
+                        <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                        <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                        <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                        <Vorbelegung></Vorbelegung>
+                        <AnzahlZeilen>1</AnzahlZeilen>
+                        <IsPasswort>false</IsPasswort>
+                    </Textfeld>
+                </Metadatenfeld>
+            </Objekt>
+        </Metadatendefinition>
+        <Metadatendefinition>
+            <EsIndexing>true</EsIndexing>
+            <Objekt Name="PD" Datentyp="OBJECT">
+                <Objektfeld>
+                    <Darstellung>Sichtbar</Darstellung>
+                    <Titel Standard="Prozessdaten"/>
+                    <Hilfetext Standard=""/>
+                    <Zeilenumbruch>false</Zeilenumbruch>
+                    <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                    <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                    <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                </Objektfeld>
+                <Metadatenfeld Name="ArtAnzeige" Datentyp="STRING">
+                    <Textfeld>
+                        <Darstellung>Sichtbar</Darstellung>
+                        <Titel Standard="Art der Anzeige"/>
+                        <Hilfetext Standard="&quot;Erstmeldung&quot; oder &quot;Änderungsanzeige&quot; für Übersicht"/>
+                        <Zeilenumbruch>false</Zeilenumbruch>
+                        <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                        <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                        <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                        <Vorbelegung></Vorbelegung>
+                        <MaxAnzahlZeichen>40</MaxAnzahlZeichen>
+                        <AnzahlZeilen>1</AnzahlZeilen>
+                        <IsPasswort>false</IsPasswort>
+                    </Textfeld>
+                </Metadatenfeld>
+                <Metadatenfeld Name="Status" Datentyp="STRING">
+                    <Textfeld>
+                        <Darstellung>Schreibgeschuetzt</Darstellung>
+                        <Titel Standard="Status"/>
+                        <Hilfetext Standard=""/>
+                        <Zeilenumbruch>false</Zeilenumbruch>
+                        <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                        <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                        <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                        <Vorbelegung></Vorbelegung>
+                        <AnzahlZeilen>1</AnzahlZeilen>
+                        <IsPasswort>false</IsPasswort>
+                    </Textfeld>
+                </Metadatenfeld>
+                <Metadatenfeld Name="PruefungDokumente" Datentyp="STRING">
+                    <Textfeld>
+                        <Darstellung>NichtSichtbar</Darstellung>
+                        <Titel Standard="Prüfung Nachreichen Dokumente"/>
+                        <Hilfetext Standard=""/>
+                        <Zeilenumbruch>false</Zeilenumbruch>
+                        <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                        <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                        <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                        <Vorbelegung></Vorbelegung>
+                        <AnzahlZeilen>1</AnzahlZeilen>
+                        <IsPasswort>false</IsPasswort>
+                    </Textfeld>
+                </Metadatenfeld>
+                <Metadatenfeld Name="Nummer" Datentyp="INTEGER">
+                    <Zahlenfeld>
+                        <Darstellung>NichtSichtbar</Darstellung>
+                        <Titel Standard="Nummer"/>
+                        <Hilfetext Standard=""/>
+                        <Zeilenumbruch>false</Zeilenumbruch>
+                        <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                        <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                        <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                    </Zahlenfeld>
+                </Metadatenfeld>
+                <Metadatenfeld Name="Aktenzeichen" Datentyp="STRING">
+                    <Textfeld>
+                        <Darstellung>Sichtbar</Darstellung>
+                        <Titel Standard="IFAS Aktenzeichen"/>
+                        <Hilfetext Standard=""/>
+                        <Zeilenumbruch>false</Zeilenumbruch>
+                        <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                        <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                        <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                        <Vorbelegung></Vorbelegung>
+                        <AnzahlZeilen>1</AnzahlZeilen>
+                        <IsPasswort>false</IsPasswort>
+                    </Textfeld>
+                </Metadatenfeld>
+                <Metadatenfeld Name="Meldung" Datentyp="STRING">
+                    <Textfeld>
+                        <Darstellung>Sichtbar</Darstellung>
+                        <Titel Standard="IFAS Fehlermeldung"/>
+                        <Hilfetext Standard=""/>
+                        <Zeilenumbruch>false</Zeilenumbruch>
+                        <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                        <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                        <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                        <Vorbelegung></Vorbelegung>
+                        <AnzahlZeilen>1</AnzahlZeilen>
+                        <IsPasswort>false</IsPasswort>
+                    </Textfeld>
+                </Metadatenfeld>
+                <Metadatenfeld Name="AutoSend" Datentyp="STRING">
+                    <Textfeld>
+                        <Darstellung>NichtSichtbar</Darstellung>
+                        <Titel Standard="Automatische Mitteilung an IFAS"/>
+                        <Hilfetext Standard="Wird für den späteren Sachbearbeitungsworkflow verwendet. Bisher ohne Verwendung."/>
+                        <Zeilenumbruch>false</Zeilenumbruch>
+                        <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                        <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                        <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                        <Vorbelegung></Vorbelegung>
+                        <AnzahlZeilen>1</AnzahlZeilen>
+                        <IsPasswort>false</IsPasswort>
+                    </Textfeld>
+                    <Standardwert>Nein</Standardwert>
+                </Metadatenfeld>
+                <Metadatenfeld Name="ZustaendigeBehoerdeOe" Datentyp="STRING">
+                    <Textfeld>
+                        <Darstellung>Sichtbar</Darstellung>
+                        <Titel Standard="Zustaendige Behoerde Oe"/>
+                        <Hilfetext Standard=""/>
+                        <Zeilenumbruch>false</Zeilenumbruch>
+                        <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                        <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                        <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                        <Vorbelegung></Vorbelegung>
+                        <AnzahlZeilen>1</AnzahlZeilen>
+                        <IsPasswort>false</IsPasswort>
+                    </Textfeld>
+                </Metadatenfeld>
+                <Metadatenfeld Name="ZustaendigeBehoerdeName" Datentyp="STRING">
+                    <Textfeld>
+                        <Darstellung>Sichtbar</Darstellung>
+                        <Titel Standard="Zuständige Behörde Name"/>
+                        <Hilfetext Standard=""/>
+                        <Zeilenumbruch>false</Zeilenumbruch>
+                        <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                        <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                        <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                        <Vorbelegung></Vorbelegung>
+                        <AnzahlZeilen>1</AnzahlZeilen>
+                        <IsPasswort>false</IsPasswort>
+                    </Textfeld>
+                </Metadatenfeld>
+                <Metadatenfeld Name="ZustaendigeBehoerdeAbt" Datentyp="STRING">
+                    <Textfeld>
+                        <Darstellung>Sichtbar</Darstellung>
+                        <Titel Standard="Zustaendige Behoerde Abteilung"/>
+                        <Hilfetext Standard=""/>
+                        <Zeilenumbruch>false</Zeilenumbruch>
+                        <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                        <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                        <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                        <Vorbelegung></Vorbelegung>
+                        <AnzahlZeilen>1</AnzahlZeilen>
+                        <IsPasswort>false</IsPasswort>
+                    </Textfeld>
+                </Metadatenfeld>
+                <Metadatenfeld Name="ZustaendigeBehoerdeStrasse" Datentyp="STRING">
+                    <Textfeld>
+                        <Darstellung>Sichtbar</Darstellung>
+                        <Titel Standard="Zuständige Behörde Strasse"/>
+                        <Hilfetext Standard=""/>
+                        <Zeilenumbruch>false</Zeilenumbruch>
+                        <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                        <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                        <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                        <Vorbelegung></Vorbelegung>
+                        <AnzahlZeilen>1</AnzahlZeilen>
+                        <IsPasswort>false</IsPasswort>
+                    </Textfeld>
+                </Metadatenfeld>
+                <Metadatenfeld Name="ZustaendigeBehoerdeHausnummer" Datentyp="STRING">
+                    <Textfeld>
+                        <Darstellung>Sichtbar</Darstellung>
+                        <Titel Standard="Zuständige Behörde Hausnummer"/>
+                        <Hilfetext Standard=""/>
+                        <Zeilenumbruch>false</Zeilenumbruch>
+                        <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                        <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                        <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                        <Vorbelegung></Vorbelegung>
+                        <AnzahlZeilen>1</AnzahlZeilen>
+                        <IsPasswort>false</IsPasswort>
+                    </Textfeld>
+                </Metadatenfeld>
+                <Metadatenfeld Name="ZustaendigeBehoerdeHausnummernzusatz" Datentyp="STRING">
+                    <Textfeld>
+                        <Darstellung>Sichtbar</Darstellung>
+                        <Titel Standard="Zuständige Behörde Hausnummernzusatz"/>
+                        <Hilfetext Standard=""/>
+                        <Zeilenumbruch>false</Zeilenumbruch>
+                        <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                        <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                        <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                        <Vorbelegung></Vorbelegung>
+                        <AnzahlZeilen>1</AnzahlZeilen>
+                        <IsPasswort>false</IsPasswort>
+                    </Textfeld>
+                </Metadatenfeld>
+                <Metadatenfeld Name="ZustaendigeBehoerdePLZ" Datentyp="STRING">
+                    <Textfeld>
+                        <Darstellung>Sichtbar</Darstellung>
+                        <Titel Standard="Zuständige Behörde PLZ"/>
+                        <Hilfetext Standard=""/>
+                        <Zeilenumbruch>false</Zeilenumbruch>
+                        <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                        <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                        <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                        <Vorbelegung></Vorbelegung>
+                        <AnzahlZeilen>1</AnzahlZeilen>
+                        <IsPasswort>false</IsPasswort>
+                    </Textfeld>
+                </Metadatenfeld>
+                <Metadatenfeld Name="ZustaendigeBehoerdeOrt" Datentyp="STRING">
+                    <Textfeld>
+                        <Darstellung>Sichtbar</Darstellung>
+                        <Titel Standard="Zuständige Behörde Ort"/>
+                        <Hilfetext Standard=""/>
+                        <Zeilenumbruch>false</Zeilenumbruch>
+                        <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                        <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                        <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                        <Vorbelegung></Vorbelegung>
+                        <AnzahlZeilen>1</AnzahlZeilen>
+                        <IsPasswort>false</IsPasswort>
+                    </Textfeld>
+                </Metadatenfeld>
+                <Metadatenfeld Name="ZustaendigeBehoerdeTelefon" Datentyp="STRING">
+                    <Textfeld>
+                        <Darstellung>Sichtbar</Darstellung>
+                        <Titel Standard="Zustaendige BehoerdeTelefon"/>
+                        <Hilfetext Standard=""/>
+                        <Zeilenumbruch>false</Zeilenumbruch>
+                        <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                        <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                        <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                        <Vorbelegung></Vorbelegung>
+                        <AnzahlZeilen>1</AnzahlZeilen>
+                        <IsPasswort>false</IsPasswort>
+                    </Textfeld>
+                </Metadatenfeld>
+                <Metadatenfeld Name="ZustaendigeBehoerdeEmail" Datentyp="STRING">
+                    <Textfeld>
+                        <Darstellung>Sichtbar</Darstellung>
+                        <Titel Standard="Zustaendige Behoerde Email"/>
+                        <Hilfetext Standard=""/>
+                        <Zeilenumbruch>false</Zeilenumbruch>
+                        <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                        <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                        <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                        <Vorbelegung></Vorbelegung>
+                        <AnzahlZeilen>1</AnzahlZeilen>
+                        <IsPasswort>false</IsPasswort>
+                    </Textfeld>
+                </Metadatenfeld>
+                <Metadatenfeld Name="ZustaendigeBehoerdeInternet" Datentyp="STRING">
+                    <Textfeld>
+                        <Darstellung>Sichtbar</Darstellung>
+                        <Titel Standard="Zustaendige Behoerde Internet"/>
+                        <Hilfetext Standard=""/>
+                        <Zeilenumbruch>false</Zeilenumbruch>
+                        <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                        <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                        <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                        <Vorbelegung></Vorbelegung>
+                        <AnzahlZeilen>1</AnzahlZeilen>
+                        <IsPasswort>false</IsPasswort>
+                    </Textfeld>
+                </Metadatenfeld>
+                <Metadatenfeld Name="BetriebID" Datentyp="STRING">
+                    <Textfeld>
+                        <Darstellung>Schreibgeschuetzt</Darstellung>
+                        <Titel Standard="BetriebID"/>
+                        <Hilfetext Standard=""/>
+                        <Zeilenumbruch>false</Zeilenumbruch>
+                        <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                        <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                        <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                        <Vorbelegung></Vorbelegung>
+                        <MaxAnzahlZeichen>80</MaxAnzahlZeichen>
+                        <AnzahlZeilen>1</AnzahlZeilen>
+                        <IsPasswort>false</IsPasswort>
+                    </Textfeld>
+                </Metadatenfeld>
+                <Metadatenfeld Name="GMK" Datentyp="STRING">
+                    <Textfeld>
+                        <Darstellung>Sichtbar</Darstellung>
+                        <Titel Standard="GMK"/>
+                        <Hilfetext Standard=""/>
+                        <Zeilenumbruch>false</Zeilenumbruch>
+                        <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                        <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                        <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                        <Vorbelegung></Vorbelegung>
+                        <MaxAnzahlZeichen>40</MaxAnzahlZeichen>
+                        <AnzahlZeilen>1</AnzahlZeilen>
+                        <IsPasswort>false</IsPasswort>
+                    </Textfeld>
+                </Metadatenfeld>
+                <Metadatenfeld Name="Benutzerkontonutzung" Datentyp="BOOLEAN">
+                    <JaNeinFeld>
+                        <Darstellung>Sichtbar</Darstellung>
+                        <Titel Standard="Ich möchte ohne Benutzerkonto eine Benachrichtigung nach § 27 Mutterschutzgesetz (MuSchG) erstellen"/>
+                        <Hilfetext Standard=""/>
+                        <Zeilenumbruch>false</Zeilenumbruch>
+                        <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                        <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                        <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                    </JaNeinFeld>
+                </Metadatenfeld>
+                <Metadatenfeld Name="AenderungEins" Datentyp="STRING">
+                    <Textfeld>
+                        <Darstellung>NichtSichtbar</Darstellung>
+                        <Titel Standard="AenderungEins"/>
+                        <Hilfetext Standard="Wird benötigt, um zu vermeiden, dass in Änderungsanzeige neue Daten in DatenfeldEA geschrieben werden."/>
+                        <Zeilenumbruch>false</Zeilenumbruch>
+                        <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                        <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                        <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                        <Vorbelegung></Vorbelegung>
+                        <AnzahlZeilen>1</AnzahlZeilen>
+                        <IsPasswort>false</IsPasswort>
+                    </Textfeld>
+                </Metadatenfeld>
+                <Metadatenfeld Name="EinwilligungKontaktEMail" Datentyp="BOOLEAN">
+                    <JaNeinFeld>
+                        <Darstellung>Sichtbar</Darstellung>
+                        <Titel Standard="Ich möchte per E-Mail kontaktiert werden. Die Information zur elektronischen Kommunikation habe ich zur Kenntnis genommen und stimme dieser zu."/>
+                        <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                        <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                        <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                    </JaNeinFeld>
+                </Metadatenfeld>
+                <Metadatenfeld Name="AbfrageDatenDritter" Datentyp="BOOLEAN">
+                    <JaNeinFeld>
+                        <Darstellung>Pflichtfeld</Darstellung>
+                        <Titel Standard="Falls personenbezogene Daten Dritter im Rahmen des Online-Anzeigeverfahrens einzugeben sind, bestätige ich, dass die Weitergabe dieser Daten mit dem Einverständnis der betroffenen Person erfolgen wird und dass der betroffenen Person die Datenschutzhinweise unverzüglich zur Verfügung gestellt werden."/>
+                        <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                        <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                        <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                    </JaNeinFeld>
+                </Metadatenfeld>
+                <Metadatenfeld Name="firstLogin" Datentyp="BOOLEAN">
+                    <JaNeinFeld>
+                        <Darstellung>Sichtbar</Darstellung>
+                        <Titel Standard="firstLogin"/>
+                        <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                        <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                        <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                    </JaNeinFeld>
+                </Metadatenfeld>
+                <Metadatenfeld Name="InfoAnzeigen" Datentyp="BOOLEAN">
+                    <JaNeinFeld>
+                        <Darstellung>Sichtbar</Darstellung>
+                        <Titel Standard="Info zum Arztvorbehalt anzeigen?"/>
+                        <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                        <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                        <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                    </JaNeinFeld>
+                </Metadatenfeld>
+                <Metadatenfeld Name="htmlText" Datentyp="STRING">
+                    <Textfeld>
+                        <Darstellung>Sichtbar</Darstellung>
+                        <Titel Standard="htmlText"/>
+                        <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                        <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                        <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                        <Vorbelegung></Vorbelegung>
+                        <AnzahlZeilen>1</AnzahlZeilen>
+                        <IsPasswort>false</IsPasswort>
+                    </Textfeld>
+                </Metadatenfeld>
+                <Metadatenfeld Name="CSSdisplay" Datentyp="STRING">
+                    <Textfeld>
+                        <Darstellung>NichtSichtbar</Darstellung>
+                        <Titel Standard="CSSdisplay"/>
+                        <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                        <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                        <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                        <Vorbelegung></Vorbelegung>
+                        <AnzahlZeilen>1</AnzahlZeilen>
+                        <IsPasswort>false</IsPasswort>
+                    </Textfeld>
+                    <Standardwert>/* The Masonry Container */ .masonry {     margin: 1.5em auto;     max-width: 100%;     column-gap: 25px;     column-fill: initial; } /* The Masonry Brick */ .masonry .brick {     display: inline-block; /* Fix the misalignment of items */     vertical-align: top; /* Keep the item on the very top */     background-color: rgba(128, 128, 128, 0.2);     border-radius:10px;     padding: 20px;     margin: 10px 5px;     width: 90%;     transition: all .3s ease-in-out; } /* Masonry on large screens */ @media only screen and (min-width: 1920px) {     .masonry {         column-count: 3;     } } /* Masonry on medium-sized screens */ @media only screen and (max-width: 1919px) and (min-width: 1024px) {     .masonry {         column-count: 2;     } }  /* Masonry on small screens */ @media only screen and (max-width: 1023px) {     .masonry {         column-count: 1;     } }  .person-item{     margin-top: 2px;     margin-bottom: 2px; }  .highlight-grey:hover {     background-color: rgba(128, 128, 128, 0.2);     box-shadow: 0 0 5px rgba(33,33,33,.2); }  .pill-remove{     border-radius: 10px !important;     height: 24px;     font-size: 20px;     color: #14133b; } .pill-remove:hover{     color: rgba(255, 0, 0, 0.5); } .pill-remove:focus{     color: rgba(255, 0, 0, 0.5);     box-shadow: 0 0 0 2px #007dbe !important; }       /* Navigation menu */ .navbar {     width: 100%;     background-color: #fff;     overflow: hidden; }  /* Navigation links */ .nav-item {     float: left;     vertical-align: top;     width: 32%;     padding: 0 auto;     color: white;     text-decoration: none;     text-align: center;     font-weight: bold;     min-height: 100px;     line-height: 100px;     font-size: large;     margin: 0.5%;     letter-spacing: 1.25px;     font-family: sans-serif;     border-radius: 10px !important;     background-color: #14133b;     transition: all .3s ease-in-out;  } .nav-item:hover {     box-shadow: 0 0 11px rgba(33,33,33,.2);     background-color: #4e4d6c;     color: white !important; } .nav-item:focus {     outline: 0;     background-color: #14133b;     box-shadow: 0 0 0 4px #007dbe !important; /*we need this, since civento makes no outline on a elemtns with !important */ } /* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */ @media only screen and (min-width: 1281px) and (max-width: 1560px) {     .nav-item {         font-size: small;     } } @media only screen and (max-width: 1280px) {     .nav-item {         float: none;         display: block;         width: 98%;         min-height: 50px;         line-height: 50px;         font-size: medium;     } }</Standardwert>
+                </Metadatenfeld>
+            </Objekt>
+        </Metadatendefinition>
+        <Metadatendefinition>
+            <EsIndexing>true</EsIndexing>
+            <Objekt Name="accountData" Datentyp="OBJECT">
+                <Objektfeld>
+                    <Darstellung>Sichtbar</Darstellung>
+                    <Titel Standard="accountData"/>
+                    <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                    <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                    <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                </Objektfeld>
+                <Metadatenfeld Name="companyStudioName" Datentyp="STRING">
+                    <Textfeld>
+                        <Darstellung>Sichtbar</Darstellung>
+                        <Titel Standard="Organisationsbezeichnung"/>
+                        <Hilfetext Standard="Geben Sie den zur Außendarstellung verwendeten Namen an, der nicht im Handelsregister, Genossenschaftsregister oder Vereinsregister eingetragen ist oder davon abweicht. Beispiele: Zum lustigen Wirt, Ruck-Zuck-GbR, McLazy."/>
+                        <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                        <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                        <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                        <Vorbelegung></Vorbelegung>
+                        <MaxAnzahlZeichen>260</MaxAnzahlZeichen>
+                        <AnzahlZeilen>1</AnzahlZeilen>
+                        <IsPasswort>false</IsPasswort>
+                    </Textfeld>
+                </Metadatenfeld>
+                <Metadatenfeld Name="companyPrivateOrJuristic" Datentyp="CHOICE">
+                    <Auswahlfeld>
+                        <Darstellung>Sichtbar</Darstellung>
+                        <Titel Standard="Füllen Sie das Formular für eine Person oder für eine Firma aus?"/>
+                        <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                        <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                        <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                        <Werteliste>juristic|Firma;private|Person</Werteliste>
+                        <Darstellungsart>DropDown</Darstellungsart>
+                        <Ausrichtung>Vertikal</Ausrichtung>
+                        <Wertelisteeingabe>Frei</Wertelisteeingabe>
+                    </Auswahlfeld>
+                </Metadatenfeld>
+                <Metadatenfeld Name="companyServicesLocation" Datentyp="CHOICE">
+                    <Auswahlfeld>
+                        <Darstellung>Pflichtfeld</Darstellung>
+                        <Titel Standard="Wo wird Ihre Dienstleistung angeboten?"/>
+                        <Hilfetext Standard="Bitte geben Sie an wo Sie die Anwendungen durchführen. Haben Sie einen festen Tätigkeitsort oder betreiben Sie Ihre Unternehmung mobil (wechselnder Tätigkeitsort)?"/>
+                        <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                        <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                        <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                        <Werteliste>studio|In einem Laden/Studio (Behandlungsraum);client|Mobil z.B. beim Kunden;studiomix|Abwechselnd mobil oder im Studio</Werteliste>
+                        <Darstellungsart>DropDown</Darstellungsart>
+                        <Ausrichtung>Vertikal</Ausrichtung>
+                        <Wertelisteeingabe>Frei</Wertelisteeingabe>
+                    </Auswahlfeld>
+                </Metadatenfeld>
+                <Metadatenfeld Name="companyStudioAddress" Datentyp="ADRESSDATENSATZ">
+                    <Adressdatensatz>
+                        <Darstellung>Pflichtfeld</Darstellung>
+                        <Titel Standard="Bitte geben Sie hier die Adresse an, an der Sie Ihre Anlage/n in Hessen betreiben. (Studio- bzw. Ladenadresse)"/>
+                        <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                        <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                        <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                        <Adressraumeinschraenkung>true</Adressraumeinschraenkung>
+                        <LandAnzeigen>false</LandAnzeigen>
+                    </Adressdatensatz>
+                </Metadatenfeld>
+                <Metadatenfeld Name="companyMainJuristicOrgName" Datentyp="STRING">
+                    <Textfeld>
+                        <Darstellung>Pflichtfeld</Darstellung>
+                        <Titel Standard="Organisationsname"/>
+                        <Hilfetext Standard="Geben Sie den im Handelsregister, im Genossenschaftsregister, im Vereinsregister oder im Stiftungsverzeichnis eingetragenen Name mit Rechtsform an, soweit eine Eintragung vorliegt."/>
+                        <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                        <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                        <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                        <Vorbelegung></Vorbelegung>
+                        <AnzahlZeilen>1</AnzahlZeilen>
+                        <IsPasswort>false</IsPasswort>
+                    </Textfeld>
+                </Metadatenfeld>
+                <Metadatenfeld Name="companyMainJuristicAddress" Datentyp="ADRESSDATENSATZ">
+                    <Adressdatensatz>
+                        <Darstellung>Pflichtfeld</Darstellung>
+                        <Titel Standard="Anschrift"/>
+                        <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                        <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                        <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                        <LandAnzeigen>false</LandAnzeigen>
+                    </Adressdatensatz>
+                </Metadatenfeld>
+                <Metadatenfeld Name="companyMainJuristicContactPerson" Datentyp="PERSONENDATENSATZ">
+                    <Personendatensatz>
+                        <Darstellung>Sichtbar</Darstellung>
+                        <Titel Standard=" Ansprechpartner für Rückfragen, z.B. Geschäftsführer oder leitende Beschäftigte: "/>
+                        <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                        <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                        <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                        <Art>ExternNatuerlichePersonen</Art>
+                        <DarstellungASDatenUerbernahme>NichtSichtbar</DarstellungASDatenUerbernahme>
+                        <DarstellungAnrede>Pflichtfeld</DarstellungAnrede>
+                        <DarstellungName>Pflichtfeld</DarstellungName>
+                        <DarstellungGeschlecht>NichtSichtbar</DarstellungGeschlecht>
+                        <DarstellungTelefonnummer>Sichtbar</DarstellungTelefonnummer>
+                        <DarstellungEmail>Pflichtfeld</DarstellungEmail>
+                        <DarstellungGeburtsname>NichtSichtbar</DarstellungGeburtsname>
+                        <DarstellungGeburtsort>NichtSichtbar</DarstellungGeburtsort>
+                        <DarstellungGeburtsdatum>NichtSichtbar</DarstellungGeburtsdatum>
+                        <DarstellungAdressdaten>NichtSichtbar</DarstellungAdressdaten>
+                        <DarstellungLand>NichtSichtbar</DarstellungLand>
+                        <darstellungPrimaereKontaktadresse>Sichtbar</darstellungPrimaereKontaktadresse>
+                        <DarstellungNationalitaet>NichtSichtbar</DarstellungNationalitaet>
+                        <darstellungBankdaten>NichtSichtbar</darstellungBankdaten>
+                    </Personendatensatz>
+                </Metadatenfeld>
+                <Metadatenfeld Name="companyMainJuristicContactPersonFunction" Datentyp="STRING">
+                    <Textfeld>
+                        <Darstellung>Sichtbar</Darstellung>
+                        <Titel Standard="Funktion der Kontaktperson"/>
+                        <Hilfetext Standard="Geben Sie die Funktion oder Rolle der Person an."/>
+                        <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                        <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                        <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                        <Vorbelegung></Vorbelegung>
+                        <MaxAnzahlZeichen>40</MaxAnzahlZeichen>
+                        <AnzahlZeilen>1</AnzahlZeilen>
+                        <IsPasswort>false</IsPasswort>
+                    </Textfeld>
+                </Metadatenfeld>
+                <Metadatenfeld Name="companyMainPrivateContactPerson" Datentyp="PERSONENDATENSATZ">
+                    <Personendatensatz>
+                        <Darstellung>Sichtbar</Darstellung>
+                        <Titel Standard="Bitte tragen Sie hier Ihren Namen, Anschrift und Kontaktdaten ein. "/>
+                        <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                        <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                        <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                        <Art>ExternNatuerlichePersonen</Art>
+                        <DarstellungASDatenUerbernahme>NichtSichtbar</DarstellungASDatenUerbernahme>
+                        <DarstellungAnrede>Pflichtfeld</DarstellungAnrede>
+                        <DarstellungName>Pflichtfeld</DarstellungName>
+                        <DarstellungGeschlecht>NichtSichtbar</DarstellungGeschlecht>
+                        <DarstellungTelefonnummer>Sichtbar</DarstellungTelefonnummer>
+                        <DarstellungEmail>Pflichtfeld</DarstellungEmail>
+                        <DarstellungGeburtsname>NichtSichtbar</DarstellungGeburtsname>
+                        <DarstellungGeburtsort>NichtSichtbar</DarstellungGeburtsort>
+                        <DarstellungGeburtsdatum>NichtSichtbar</DarstellungGeburtsdatum>
+                        <DarstellungAdressdaten>Pflichtfeld</DarstellungAdressdaten>
+                        <DarstellungLand>NichtSichtbar</DarstellungLand>
+                        <darstellungPrimaereKontaktadresse>Sichtbar</darstellungPrimaereKontaktadresse>
+                        <DarstellungNationalitaet>NichtSichtbar</DarstellungNationalitaet>
+                        <darstellungBankdaten>NichtSichtbar</darstellungBankdaten>
+                    </Personendatensatz>
+                </Metadatenfeld>
+                <Metadatenfeld Name="InfoArztvorbehalt" Datentyp="BOOLEAN">
+                    <JaNeinFeld>
+                        <Darstellung>Pflichtfeld</Darstellung>
+                        <Titel Standard="Ich habe den Informationstext für den Arztvorbehalt gelesen und verstanden"/>
+                        <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                        <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                        <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                    </JaNeinFeld>
+                </Metadatenfeld>
+            </Objekt>
+        </Metadatendefinition>
+        <Metadatendefinition>
+            <EsIndexing>true</EsIndexing>
+            <Objekt Name="Login" Datentyp="OBJECT">
+                <Objektfeld>
+                    <Darstellung>Sichtbar</Darstellung>
+                    <Titel Standard="Login"/>
+                    <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                    <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                    <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                </Objektfeld>
+                <Metadatenfeld Name="idParent" Datentyp="STRING">
+                    <Textfeld>
+                        <Darstellung>Sichtbar</Darstellung>
+                        <Titel Standard="idParent"/>
+                        <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                        <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                        <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                        <Vorbelegung></Vorbelegung>
+                        <MaxAnzahlZeichen>40</MaxAnzahlZeichen>
+                        <AnzahlZeilen>1</AnzahlZeilen>
+                        <IsPasswort>false</IsPasswort>
+                    </Textfeld>
+                </Metadatenfeld>
+                <Metadatenfeld Name="password" Datentyp="STRING">
+                    <Textfeld>
+                        <Darstellung>Sichtbar</Darstellung>
+                        <Titel Standard="password"/>
+                        <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                        <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                        <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                        <Vorbelegung></Vorbelegung>
+                        <MaxAnzahlZeichen>40</MaxAnzahlZeichen>
+                        <AnzahlZeilen>1</AnzahlZeilen>
+                        <IsPasswort>true</IsPasswort>
+                    </Textfeld>
+                </Metadatenfeld>
+                <Metadatenfeld Name="EinwilligungKontaktEMail" Datentyp="BOOLEAN">
+                    <JaNeinFeld>
+                        <Darstellung>Sichtbar</Darstellung>
+                        <Titel Standard="Ich möchte per E-Mail kontaktiert werden. Die Information zur elektronischen Kommunikation habe ich zur Kenntnis genommen und stimme dieser zu."/>
+                        <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                        <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                        <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                    </JaNeinFeld>
+                </Metadatenfeld>
+                <Metadatenfeld Name="AbfrageDatenDritter" Datentyp="BOOLEAN">
+                    <JaNeinFeld>
+                        <Darstellung>Sichtbar</Darstellung>
+                        <Titel Standard="Falls personenbezogene Daten Dritter im Rahmen des Online-Anzeigeverfahrens einzugeben sind, bestätige ich, dass die Weitergabe dieser Daten mit dem Einverständnis der betroffenen Person erfolgen wird und dass der betroffenen Person die Datenschutzhinweise unverzüglich zur Verfügung gestellt werden."/>
+                        <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                        <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                        <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                    </JaNeinFeld>
+                </Metadatenfeld>
+                <Metadatenfeld Name="Benutzerkontonutzung" Datentyp="BOOLEAN">
+                    <JaNeinFeld>
+                        <Darstellung>Sichtbar</Darstellung>
+                        <Titel Standard="Ich möchte ohne Login fortfahren."/>
+                        <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                        <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                        <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                    </JaNeinFeld>
+                </Metadatenfeld>
+            </Objekt>
+        </Metadatendefinition>
+        <Metadatendefinition>
+            <EsIndexing>true</EsIndexing>
+            <Objekt Name="Personen" Datentyp="OBJECT">
+                <Objektfeld>
+                    <Darstellung>Sichtbar</Darstellung>
+                    <Titel Standard="Personen"/>
+                    <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                    <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                    <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                </Objektfeld>
+                <Metadatenliste Name="personal" Datentyp="LIST">
+                    <Liste>
+                        <Darstellung>Sichtbar</Darstellung>
+                        <Titel Standard="personal"/>
+                        <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                        <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                        <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                        <EintragTitel Standard="Person"/>
+                        <ShowId>false</ShowId>
+                    </Liste>
+                    <Metadatenobjekt Name="Objekt" Datentyp="OBJECT">
+                        <Objektfeld>
+                            <Darstellung>Sichtbar</Darstellung>
+                            <Titel Standard="Objekt"/>
+                            <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                            <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                            <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                        </Objektfeld>
+                        <Metadatenfeld Name="personId" Datentyp="INTEGER">
+                            <Zahlenfeld>
+                                <Darstellung>NichtSichtbar</Darstellung>
+                                <Titel Standard="personId"/>
+                                <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                                <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                                <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                                <Von>1</Von>
+                            </Zahlenfeld>
+                        </Metadatenfeld>
+                        <Metadatenfeld Name="Anrede" Datentyp="CHOICE">
+                            <Auswahlfeld>
+                                <Darstellung>Sichtbar</Darstellung>
+                                <Titel Standard="Anrede"/>
+                                <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                                <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                                <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                                <Werteliste>9|Mit geschlechtsneutraler Anrede;4|Frau;3|Herr</Werteliste>
+                                <Darstellungsart>DropDown</Darstellungsart>
+                                <Ausrichtung>Vertikal</Ausrichtung>
+                                <Wertelisteeingabe>Frei</Wertelisteeingabe>
+                            </Auswahlfeld>
+                        </Metadatenfeld>
+                        <Metadatenfeld Name="firstname" Datentyp="STRING">
+                            <Textfeld>
+                                <Darstellung>Sichtbar</Darstellung>
+                                <Titel Standard="Vorname"/>
+                                <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                                <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                                <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                                <Vorbelegung></Vorbelegung>
+                                <MaxAnzahlZeichen>40</MaxAnzahlZeichen>
+                                <AnzahlZeilen>1</AnzahlZeilen>
+                                <IsPasswort>false</IsPasswort>
+                            </Textfeld>
+                        </Metadatenfeld>
+                        <Metadatenfeld Name="name" Datentyp="STRING">
+                            <Textfeld>
+                                <Darstellung>Sichtbar</Darstellung>
+                                <Titel Standard="Name"/>
+                                <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                                <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                                <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                                <Vorbelegung></Vorbelegung>
+                                <AnzahlZeilen>1</AnzahlZeilen>
+                                <IsPasswort>false</IsPasswort>
+                            </Textfeld>
+                        </Metadatenfeld>
+                        <Metadatenfeld Name="personIdExt" Datentyp="STRING">
+                            <Textfeld>
+                                <Darstellung>NichtSichtbar</Darstellung>
+                                <Titel Standard="personIdExt"/>
+                                <Hilfetext Standard="external Id of the person (hash str)"/>
+                                <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                                <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                                <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                                <Vorbelegung></Vorbelegung>
+                                <MaxAnzahlZeichen>100</MaxAnzahlZeichen>
+                                <AnzahlZeilen>1</AnzahlZeilen>
+                                <IsPasswort>false</IsPasswort>
+                            </Textfeld>
+                        </Metadatenfeld>
+                        <Metadatenfeld Name="GK" Datentyp="BOOLEAN">
+                            <JaNeinFeld>
+                                <Darstellung>Sichtbar</Darstellung>
+                                <Titel Standard="GK"/>
+                                <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                                <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                                <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                            </JaNeinFeld>
+                        </Metadatenfeld>
+                        <Metadatenfeld Name="OS" Datentyp="BOOLEAN">
+                            <JaNeinFeld>
+                                <Darstellung>Sichtbar</Darstellung>
+                                <Titel Standard="OS"/>
+                                <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                                <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                                <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                            </JaNeinFeld>
+                        </Metadatenfeld>
+                        <Metadatenfeld Name="US" Datentyp="BOOLEAN">
+                            <JaNeinFeld>
+                                <Darstellung>Sichtbar</Darstellung>
+                                <Titel Standard="US"/>
+                                <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                                <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                                <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                            </JaNeinFeld>
+                        </Metadatenfeld>
+                        <Metadatenfeld Name="EK" Datentyp="BOOLEAN">
+                            <JaNeinFeld>
+                                <Darstellung>Sichtbar</Darstellung>
+                                <Titel Standard="EK"/>
+                                <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                                <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                                <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                            </JaNeinFeld>
+                        </Metadatenfeld>
+                        <Metadatenfeld Name="ES" Datentyp="BOOLEAN">
+                            <JaNeinFeld>
+                                <Darstellung>Sichtbar</Darstellung>
+                                <Titel Standard="ES"/>
+                                <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                                <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                                <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                            </JaNeinFeld>
+                        </Metadatenfeld>
+                        <Metadatenfeld Name="AusbildungGK" Datentyp="CHOICE">
+                            <Auswahlfeld>
+                                <Darstellung>Sichtbar</Darstellung>
+                                <Titel Standard="Ausbildung"/>
+                                <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                                <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                                <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                                <Werteliste>1|staatlich anerkannte Berufsausbildung zum Kosmetiker/zur Kosmetikerin;2|Bildungsgang staatlich geprüfter Kosmetiker/staatlich geprüfte Kosmetikerin;3|Meisterprüfung im Kosmetikgewerbe;4|verfügt am 5. Dezember 2021 über eine berufliche Praxis im Kosmetikgewerbe von mindestens fünf Jahren
+</Werteliste>
+                                <Darstellungsart>DropDown</Darstellungsart>
+                                <Ausrichtung>Vertikal</Ausrichtung>
+                                <Wertelisteeingabe>Frei</Wertelisteeingabe>
+                            </Auswahlfeld>
+                        </Metadatenfeld>
+                        <Metadatenfeld Name="DatumGK" Datentyp="DATE">
+                            <Datumsfeld>
+                                <Darstellung>Sichtbar</Darstellung>
+                                <Titel Standard="Datum des Erwerbs"/>
+                                <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                                <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                                <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                                <vorbelegungHeute/>
+                                <PruefungDarfNichtInDerVergangenheitLiegen>false</PruefungDarfNichtInDerVergangenheitLiegen>
+                                <PruefungDarfNichtInDerZukunftLiegen>false</PruefungDarfNichtInDerZukunftLiegen>
+                                <WithDatePicker>true</WithDatePicker>
+                            </Datumsfeld>
+                        </Metadatenfeld>
+                        <Metadatenfeld Name="DatumOS" Datentyp="DATE">
+                            <Datumsfeld>
+                                <Darstellung>Sichtbar</Darstellung>
+                                <Titel Standard="Datum des Erwerbs"/>
+                                <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                                <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                                <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                                <vorbelegungHeute/>
+                                <PruefungDarfNichtInDerVergangenheitLiegen>false</PruefungDarfNichtInDerVergangenheitLiegen>
+                                <PruefungDarfNichtInDerZukunftLiegen>false</PruefungDarfNichtInDerZukunftLiegen>
+                                <WithDatePicker>true</WithDatePicker>
+                            </Datumsfeld>
+                        </Metadatenfeld>
+                        <Metadatenfeld Name="DatumUS" Datentyp="DATE">
+                            <Datumsfeld>
+                                <Darstellung>Sichtbar</Darstellung>
+                                <Titel Standard="Datum des Erwerbs"/>
+                                <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                                <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                                <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                                <vorbelegungHeute/>
+                                <PruefungDarfNichtInDerVergangenheitLiegen>false</PruefungDarfNichtInDerVergangenheitLiegen>
+                                <PruefungDarfNichtInDerZukunftLiegen>false</PruefungDarfNichtInDerZukunftLiegen>
+                                <WithDatePicker>true</WithDatePicker>
+                            </Datumsfeld>
+                        </Metadatenfeld>
+                        <Metadatenfeld Name="DatumEK" Datentyp="DATE">
+                            <Datumsfeld>
+                                <Darstellung>Sichtbar</Darstellung>
+                                <Titel Standard="Datum des Erwerbs"/>
+                                <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                                <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                                <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                                <vorbelegungHeute/>
+                                <PruefungDarfNichtInDerVergangenheitLiegen>false</PruefungDarfNichtInDerVergangenheitLiegen>
+                                <PruefungDarfNichtInDerZukunftLiegen>false</PruefungDarfNichtInDerZukunftLiegen>
+                                <WithDatePicker>true</WithDatePicker>
+                            </Datumsfeld>
+                        </Metadatenfeld>
+                        <Metadatenfeld Name="DatumES" Datentyp="DATE">
+                            <Datumsfeld>
+                                <Darstellung>Sichtbar</Darstellung>
+                                <Titel Standard="Datum des Erwerbs"/>
+                                <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                                <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                                <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                                <vorbelegungHeute/>
+                                <PruefungDarfNichtInDerVergangenheitLiegen>false</PruefungDarfNichtInDerVergangenheitLiegen>
+                                <PruefungDarfNichtInDerZukunftLiegen>false</PruefungDarfNichtInDerZukunftLiegen>
+                                <WithDatePicker>true</WithDatePicker>
+                            </Datumsfeld>
+                        </Metadatenfeld>
+                        <Metadatenfeld Name="SichtbarkeitsFlag" Datentyp="BOOLEAN">
+                            <JaNeinFeld>
+                                <Darstellung>NichtSichtbar</Darstellung>
+                                <Titel Standard="SichtbarkeitsFlag"/>
+                                <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                                <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                                <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                            </JaNeinFeld>
+                            <Standardwert>TRUE</Standardwert>
+                        </Metadatenfeld>
+                    </Metadatenobjekt>
+                </Metadatenliste>
+            </Objekt>
+        </Metadatendefinition>
+        <Metadatendefinition>
+            <EsIndexing>true</EsIndexing>
+            <Objekt Name="Geraete" Datentyp="OBJECT">
+                <Objektfeld>
+                    <Darstellung>Sichtbar</Darstellung>
+                    <Titel Standard="Geraete"/>
+                    <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                    <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                    <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                </Objektfeld>
+                <Metadatenliste Name="resources" Datentyp="LIST">
+                    <Liste>
+                        <Darstellung>Sichtbar</Darstellung>
+                        <Titel Standard="resources"/>
+                        <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                        <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                        <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                        <EintragTitel Standard="Resource"/>
+                        <ShowId>false</ShowId>
+                    </Liste>
+                    <Metadatenobjekt Name="Objekt" Datentyp="OBJECT">
+                        <Objektfeld>
+                            <Darstellung>Sichtbar</Darstellung>
+                            <Titel Standard="Objekt"/>
+                            <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                            <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                            <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                        </Objektfeld>
+                        <Metadatenfeld Name="type" Datentyp="CHOICE">
+                            <Auswahlfeld>
+                                <Darstellung>Pflichtfeld</Darstellung>
+                                <Titel Standard="Anlagenart"/>
+                                <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                                <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                                <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                                <Werteliste>1|Laser/intensive Lichtquellen;2|Ultraschall;3|EMF-Kosmetik;4|EMF-Stimulation</Werteliste>
+                                <Darstellungsart>DropDown</Darstellungsart>
+                                <Ausrichtung>Vertikal</Ausrichtung>
+                                <Wertelisteeingabe>Frei</Wertelisteeingabe>
+                            </Auswahlfeld>
+                        </Metadatenfeld>
+                        <Metadatenfeld Name="Verwendungszweck" Datentyp="STRING">
+                            <Textfeld>
+                                <Darstellung>Pflichtfeld</Darstellung>
+                                <Titel Standard="Verwendungszweck der Anlage"/>
+                                <Hilfetext Standard="Bitte geben Sie an für welche Anwendungen Sie die Anlage nutzen. Beschreiben Sie die Anwendung möglichst genau z.B. thermische Fettreduktion, lasergestützte Haarentfernung, etc."/>
+                                <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                                <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                                <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                                <Vorbelegung></Vorbelegung>
+                                <AnzahlZeilen>6</AnzahlZeilen>
+                                <IsPasswort>false</IsPasswort>
+                            </Textfeld>
+                        </Metadatenfeld>
+                        <Metadatenfeld Name="label" Datentyp="STRING">
+                            <Textfeld>
+                                <Darstellung>Pflichtfeld</Darstellung>
+                                <Titel Standard="Bezeichnung (Modell, Typ, ggf. Baujahr)"/>
+                                <Hilfetext Standard="Die Angaben finden Sie auf dem Typenschild der Anlage."/>
+                                <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                                <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                                <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                                <Vorbelegung></Vorbelegung>
+                                <AnzahlZeilen>1</AnzahlZeilen>
+                                <IsPasswort>false</IsPasswort>
+                            </Textfeld>
+                        </Metadatenfeld>
+                        <Metadatenfeld Name="Hersteller" Datentyp="STRING">
+                            <Textfeld>
+                                <Darstellung>Pflichtfeld</Darstellung>
+                                <Titel Standard="Hersteller"/>
+                                <Hilfetext Standard="Die Angaben finden Sie auf dem Typenschild der Anlage."/>
+                                <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                                <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                                <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                                <Vorbelegung></Vorbelegung>
+                                <AnzahlZeilen>1</AnzahlZeilen>
+                                <IsPasswort>false</IsPasswort>
+                            </Textfeld>
+                        </Metadatenfeld>
+                        <Metadatenfeld Name="resourceId" Datentyp="INTEGER">
+                            <Zahlenfeld>
+                                <Darstellung>Schreibgeschuetzt</Darstellung>
+                                <Titel Standard="resourceId"/>
+                                <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                                <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                                <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                            </Zahlenfeld>
+                        </Metadatenfeld>
+                        <Metadatenfeld Name="resourceIdExt" Datentyp="STRING">
+                            <Textfeld>
+                                <Darstellung>Schreibgeschuetzt</Darstellung>
+                                <Titel Standard="resourceIdExt"/>
+                                <Hilfetext Standard="external id of the resource (hash str)"/>
+                                <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                                <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                                <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                                <Vorbelegung></Vorbelegung>
+                                <MaxAnzahlZeichen>100</MaxAnzahlZeichen>
+                                <AnzahlZeilen>1</AnzahlZeilen>
+                                <IsPasswort>false</IsPasswort>
+                            </Textfeld>
+                        </Metadatenfeld>
+                        <Metadatenfeld Name="Seriennummer" Datentyp="STRING">
+                            <Textfeld>
+                                <Darstellung>Pflichtfeld</Darstellung>
+                                <Titel Standard="Seriennummer"/>
+                                <Hilfetext Standard="Die Angaben finden Sie auf dem Typenschild der Anlage."/>
+                                <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                                <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                                <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                                <Vorbelegung></Vorbelegung>
+                                <AnzahlZeilen>1</AnzahlZeilen>
+                                <IsPasswort>false</IsPasswort>
+                            </Textfeld>
+                        </Metadatenfeld>
+                        <Metadatenfeld Name="Aufstellort" Datentyp="STRING">
+                            <Textfeld>
+                                <Darstellung>Pflichtfeld</Darstellung>
+                                <Titel Standard="Aufstellort der Anlage"/>
+                                <Hilfetext Standard="Hier ist für Anlagen, die ausschließlich in einem festen Raum eingesetzt werden, die Raumnummer und Raumbezeichnung anzugeben. Bei Anlagen, die in wechselnden Räumen eingesetzt werden ist 'mobil' anzugeben und - sofern zutreffend - z.B. die Abteilung. Beispiele: mobil, Kosmetik; mobil, dermatologische Ambulanz."/>
+                                <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                                <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                                <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                                <Vorbelegung></Vorbelegung>
+                                <AnzahlZeilen>6</AnzahlZeilen>
+                                <IsPasswort>false</IsPasswort>
+                            </Textfeld>
+                        </Metadatenfeld>
+                        <Metadatenfeld Name="SichtbarkeitsFlag" Datentyp="BOOLEAN">
+                            <JaNeinFeld>
+                                <Darstellung>NichtSichtbar</Darstellung>
+                                <Titel Standard="SichtbarkeitsFlag"/>
+                                <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                                <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                                <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                            </JaNeinFeld>
+                            <Standardwert>TRUE</Standardwert>
+                        </Metadatenfeld>
+                        <Metadatenfeld Name="Arztvorbehalt" Datentyp="CHOICE">
+                            <Auswahlfeld>
+                                <Darstellung>Pflichtfeld</Darstellung>
+                                <Titel Standard="Fällt diese Anwendung unter den Arztvorbehalt?"/>
+                                <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                                <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                                <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                                <Werteliste>ja;nein</Werteliste>
+                                <Darstellungsart>RadioButton</Darstellungsart>
+                                <Ausrichtung>Vertikal</Ausrichtung>
+                                <Wertelisteeingabe>Frei</Wertelisteeingabe>
+                            </Auswahlfeld>
+                        </Metadatenfeld>
+                    </Metadatenobjekt>
+                </Metadatenliste>
+            </Objekt>
+        </Metadatendefinition>
+        <Metadatendefinition>
+            <EsIndexing>true</EsIndexing>
+            <Objekt Name="IA" Datentyp="OBJECT">
+                <Objektfeld>
+                    <Darstellung>Sichtbar</Darstellung>
+                    <Titel Standard="Informationen zum Arbeitsumfeld"/>
+                    <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                    <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                    <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                </Objektfeld>
+                <Metadatenfeld Name="Betriebsstaette" Datentyp="ADRESSDATENSATZ">
+                    <Adressdatensatz>
+                        <Darstellung>Schreibgeschuetzt</Darstellung>
+                        <Titel Standard="Betriebsstaette"/>
+                        <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                        <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                        <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                        <LandAnzeigen>false</LandAnzeigen>
+                    </Adressdatensatz>
+                </Metadatenfeld>
+                <Metadatenfeld Name="Arbeitgeber" Datentyp="PERSONENDATENSATZ">
+                    <Personendatensatz>
+                        <Darstellung>Schreibgeschuetzt</Darstellung>
+                        <Titel Standard="Arbeitgeber"/>
+                        <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                        <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                        <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                        <Art>ExternJuristischePersonen</Art>
+                        <DarstellungASDatenUerbernahme>Schreibgeschuetzt</DarstellungASDatenUerbernahme>
+                        <DarstellungAnrede>Schreibgeschuetzt</DarstellungAnrede>
+                        <DarstellungName>Schreibgeschuetzt</DarstellungName>
+                        <DarstellungGeschlecht>NichtSichtbar</DarstellungGeschlecht>
+                        <DarstellungTelefonnummer>Schreibgeschuetzt</DarstellungTelefonnummer>
+                        <DarstellungEmail>Schreibgeschuetzt</DarstellungEmail>
+                        <DarstellungGeburtsname>NichtSichtbar</DarstellungGeburtsname>
+                        <DarstellungGeburtsort>NichtSichtbar</DarstellungGeburtsort>
+                        <DarstellungGeburtsdatum>NichtSichtbar</DarstellungGeburtsdatum>
+                        <DarstellungAdressdaten>Schreibgeschuetzt</DarstellungAdressdaten>
+                        <DarstellungLand>NichtSichtbar</DarstellungLand>
+                        <darstellungPrimaereKontaktadresse>Sichtbar</darstellungPrimaereKontaktadresse>
+                        <DarstellungNationalitaet>NichtSichtbar</DarstellungNationalitaet>
+                        <darstellungBankdaten>NichtSichtbar</darstellungBankdaten>
+                    </Personendatensatz>
+                </Metadatenfeld>
+                <Metadatenfeld Name="TitelK" Datentyp="STRING">
+                    <Textfeld>
+                        <Darstellung>Sichtbar</Darstellung>
+                        <Titel Standard="Titel"/>
+                        <Hilfetext Standard="Hier können anerkannte Doktorgrade angegeben werden. Zulässig sind: „DR.“, „Dr.“, „DR.HC.“, „Dr.hc.“, „Dr.EH.“ und „Dr.eh.“. Sollen mehrere Doktorgrade angegeben werden, so sind diese durch ein Leerzeichen zu trennen."/>
+                        <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                        <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                        <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                        <Vorbelegung></Vorbelegung>
+                        <AnzahlZeilen>1</AnzahlZeilen>
+                        <IsPasswort>false</IsPasswort>
+                    </Textfeld>
+                </Metadatenfeld>
+                <Metadatenfeld Name="NameK" Datentyp="STRING">
+                    <Textfeld>
+                        <Darstellung>Sichtbar</Darstellung>
+                        <Id>Geben Sie den Nachnamen, Zunamen bzw. Familiennamen an.</Id>
+                        <Titel Standard="Familienname"/>
+                        <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                        <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                        <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                        <Vorbelegung></Vorbelegung>
+                        <AnzahlZeilen>1</AnzahlZeilen>
+                        <IsPasswort>false</IsPasswort>
+                    </Textfeld>
+                </Metadatenfeld>
+                <Metadatenfeld Name="VornameK" Datentyp="STRING">
+                    <Textfeld>
+                        <Darstellung>Sichtbar</Darstellung>
+                        <Id>Geben Sie die Vornamen an. Es empfiehlt sich, die Vornamen genau so anzugeben, wie Sie auf den offiziellen Ausweisdokumenten, z.B. Personalausweis angegeben sind.</Id>
+                        <Titel Standard="Vorname"/>
+                        <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                        <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                        <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                        <Vorbelegung></Vorbelegung>
+                        <MaxAnzahlZeichen>40</MaxAnzahlZeichen>
+                        <AnzahlZeilen>1</AnzahlZeilen>
+                        <IsPasswort>false</IsPasswort>
+                    </Textfeld>
+                </Metadatenfeld>
+                <Metadatenfeld Name="TelefonnummerK" Datentyp="STRING">
+                    <Textfeld>
+                        <Darstellung>Sichtbar</Darstellung>
+                        <Titel Standard="Telefonnummer"/>
+                        <Hilfetext Standard="Geben Sie bitte bei Telefonnummern innerhalb Deutschlands zuerst die Ortsvorwahl/Mobilnetzvorwahl in Klammern, gefolgt von der Rufnummer an, z.B. (0211) 12345678. Geben Sie bitte bei Telefonnummern außerhalb von Deutschland zuerst den Internationalen Ländercode mit vorgestelltem Plus, gefolgt von der Ortsvorwahl/Mobilnetzvorwahl ohne der führenden Null, gefolgt von der Rufnummer an, z.B. +49 211 123456789."/>
+                        <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                        <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                        <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                        <Vorbelegung></Vorbelegung>
+                        <MaxAnzahlZeichen>23</MaxAnzahlZeichen>
+                        <AnzahlZeilen>1</AnzahlZeilen>
+                        <RegulaererAusdruck>[0-9. +()-]{1,23}</RegulaererAusdruck>
+                        <IsPasswort>false</IsPasswort>
+                    </Textfeld>
+                </Metadatenfeld>
+                <Metadatenfeld Name="eMailK" Datentyp="STRING">
+                    <Textfeld>
+                        <Darstellung>Sichtbar</Darstellung>
+                        <Titel Standard="E-Mail-Adresse"/>
+                        <Hilfetext Standard="Geben Sie bitte Ihre E-Mail-Adresse ein. Beispiel: MaxMustermann@email.de"/>
+                        <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                        <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                        <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                        <Vorbelegung></Vorbelegung>
+                        <MaxAnzahlZeichen>254</MaxAnzahlZeichen>
+                        <AnzahlZeilen>1</AnzahlZeilen>
+                        <RegulaererAusdruck>(?:[A-z0-9!#$%&amp;'*+/=?^_`{|}~-]+(?:\.[A-z0-9!#$%&amp;'*+/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]| \\[\x01-\x09\x0b\x0c\x0e-\x7f])*")@(?:(?:[A-z0-9](?:[A-z0-9-]*[A-z0-9])?\.)+[A-z0-9](?:[A-z0-9-]*[A-z0-9])?|\[(?:(?:(2(5[0-5]|[0-4][0-9])| 1[0-9][0-9]|[1-9]?[0-9]))\.){3}(?:(2(5[0-5]|[0-4][0-9])|1[0-9][0-9]|[1-9]?[0-9])|[A-z0-9-]*[A-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a \x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])</RegulaererAusdruck>
+                        <IsPasswort>false</IsPasswort>
+                    </Textfeld>
+                </Metadatenfeld>
+                <Metadatenfeld Name="BetriebsstaetteAcc" Datentyp="ADRESSDATENSATZ">
+                    <Adressdatensatz>
+                        <Darstellung>Schreibgeschuetzt</Darstellung>
+                        <Titel Standard="BetriebsstaetteAcc"/>
+                        <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                        <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                        <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                        <LandAnzeigen>false</LandAnzeigen>
+                    </Adressdatensatz>
+                </Metadatenfeld>
+            </Objekt>
+        </Metadatendefinition>
+        <Erfassungsworkflow Id="208533238089750">
+            <Startelement Id="208536813946500">
+                <Active>true</Active>
+                <AntragstellerdatenAnfordern Id="208540389803250">
+                    <Active>true</Active>
+                    <Authentifizierungsart>AY, Anonym</Authentifizierungsart>
+                </AntragstellerdatenAnfordern>
+                <Entscheidungselement Id="234459920428896">
+                    <Active>true</Active>
+                    <Entscheidungszweig Id="449406873167959">
+                        <Comment>Wenn keine Login Daten übergeben werden, wird die Startseite und Loginformular geöffnet</Comment>
+                        <Active>true</Active>
+                        <Ausdruck>
+                            <Ausdruck>isNull(V.Z.TMP.case) OR isNull(V.Z.TMP.type) </Ausdruck>
+                        </Ausdruck>
+                        <StartseiteAnzeigen Id="-939819483229365">
+                            <Active>true</Active>
+                            <Titel Standard="Start"/>
+                            <Meldung Standard="&lt;h3&gt;Herzlich willkommen&lt;/h3&gt; &lt;div class=&quot;cc-text&quot;&gt;&amp;nbsp;&lt;/div&gt; &lt;div id=&quot;grusstext&quot; class=&quot;cc-text&quot;&gt;Am 31.12.2020 trat die &lt;strong&gt;Verordnung zum Schutz vor gef&amp;auml;hrlichen Wirkungen von nichtionisierender Strahlung zur Anwendung am Menschen&lt;/strong&gt; (NiSV) in Kraft. &lt;br /&gt;Diese Verordnung ist notwendig geworden, da bislang die meisten apparativen Behandlungen in der Kosmetikbranche oder &amp;auml;hnlichen Gewerben ohne gesetzlich vorgeschriebene Qualifikation der Anwender angeboten wurden.&lt;/div&gt; &lt;div class=&quot;cc-text&quot;&gt;&lt;br /&gt;Zum Schutz der Verbraucher und Verbraucherinnen hat der Gesetzgeber entschieden, dass Personen, die Anwendungen mit den betroffenen Ger&amp;auml;tengruppen anbieten, ab dem 31.12.2020 dies anmelden m&amp;uuml;ssen. Mit diesem Onlineformular haben Sie, als Betreiber und Anwender, die M&amp;ouml;glichkeit, die nach &amp;sect; 3 Absatz 3 NiSV geforderte Anzeige bei der zust&amp;auml;ndigen Beh&amp;ouml;rde zu machen.&lt;/div&gt; &lt;div class=&quot;cc-text&quot;&gt;&amp;nbsp;&lt;/div&gt; &lt;div class=&quot;cc-text&quot;&gt;&amp;nbsp;&lt;/div&gt; &lt;div class=&quot;cc-text&quot;&gt;&lt;/div&gt; &lt;h3&gt;Voraussetzungen&lt;/h3&gt; &lt;p&gt;&amp;nbsp;&lt;/p&gt; &lt;div&gt; &lt;p style=&quot;font-weight: var(--hzdFW-B);&quot;&gt;1. Ob Ihr/e Ger&amp;auml;t/e unter die Regelungen der Verordnung fallen, erfragen Sie bitte bei Ihrem H&amp;auml;ndler oder Hersteller Ihres Ger&amp;auml;tes.&lt;/p&gt; &lt;p&gt;Folgende Punkte, k&amp;ouml;nnten auf eine Anzeigepflicht hindeuten:&lt;/p&gt; &lt;p&gt;a) Sie betreiben eine oder mehrere der folgenden Anlagen, oder wollen eine oder mehrere Anlagen in Betrieb nehmen, die unter folgende Anlagenart fallen:&lt;/p&gt; &lt;p&gt;&amp;nbsp;&lt;/p&gt; &lt;ul class=&quot;hzdRequirements&quot;&gt; &lt;li&gt;Ultraschallger&amp;auml;t&lt;/li&gt; &lt;li&gt;Lasereinrichtung&lt;/li&gt; &lt;li&gt;Intensive Lichtquellen&lt;/li&gt; &lt;li&gt;Magnetfeldger&amp;auml;t&lt;/li&gt; &lt;li&gt;Hochfrequenzger&amp;auml;t&lt;/li&gt; &lt;li&gt;Niederfrequenzger&amp;auml;t&lt;/li&gt; &lt;li&gt;Gleichstromger&amp;auml;t&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;&amp;nbsp;&lt;/p&gt; &lt;p&gt;b) und die Grenzwerte den Angaben nach &amp;sect; 2 NiSV entsprechen&lt;/p&gt; &lt;br /&gt; &lt;p style=&quot;font-weight: var(--hzdFW-B);&quot;&gt;2. Bitte halten Sie folgende Unterlagen f&amp;uuml;r die Anzeigenerstellung bereit:&lt;/p&gt; &lt;p style=&quot;font-weight: var(--hzdFW-B);&quot;&gt;&amp;nbsp;&lt;/p&gt; &lt;ul class=&quot;hzdNeededDocs&quot;&gt; &lt;li&gt;Angaben zu Ihrem Betrieb&lt;/li&gt; &lt;li&gt;Beschreibung der Anlage/n mit Modellbezeichnung, Seriennummer und Anwendungszweck(e)&lt;/li&gt; &lt;/ul&gt; &lt;/div&gt;"/>
+                            <ProzessName Standard="Start"/>
+                            <IsDatenschutzerklarung>true</IsDatenschutzerklarung>
+                            <IsMindestalterbestatigen>false</IsMindestalterbestatigen>
+                            <DatenschutzerklarungErsetzen>false</DatenschutzerklarungErsetzen>
+                            <initialSichtbareWorter>50</initialSichtbareWorter>
+                        </StartseiteAnzeigen>
+                        <DokumentAnzeigen Id="506294660458500">
+                            <Active>true</Active>
+                            <Titel Standard="Login"/>
+                            <ProzessName Standard="Login"/>
+                            <DynamischesFormular>
+                                <Name Standard="Login"/>
+                                <Klassifizierung>Antragsdokument</Klassifizierung>
+                                <DokumentverweisVorlage/>
+                                <DokumentelementGruppe>
+                                    <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                                    <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                                    <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                                    <Id>3477913714745680</Id>
+                                    <Titel Standard="Erklärungen"/>
+                                    <Sichtbarkeit/>
+                                    <DokumentelementText>
+                                        <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                                        <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                                        <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                                        <Objekt/>
+                                        <Style/>
+                                        <Text Standard="&lt;p&gt;&lt;strong&gt;Einwilligung zur Kontaktaufnahme per E-Mail&lt;/strong&gt;&lt;/p&gt; &lt;p&gt;Im Zuge einer elektronischen Aktenf&amp;uuml;hrung bevorzugen wir die Wege der elektronischen Kommunikation. Sie ist oft schneller, spart Papier und schont die Umwelt! Die Zustimmung zum elektronischen Kommunikationsweg ist freiwillig. Sie stimmen zu, dass wir, als zust&amp;auml;ndige Beh&amp;ouml;rde, Ihnen per E-Mail antragsbezogene Fragen und Informationen zukommen lassen d&amp;uuml;rfen. In jedem Fall erfolgt die Best&amp;auml;tigung des Eingangs Ihrer Anzeige per E-Mail. Sie k&amp;ouml;nnen Ihre Einwilligung jederzeit formlos widerrufen.&lt;/p&gt;"/>
+                                        <Typ>Standard</Typ>
+                                        <Zeilen>0</Zeilen>
+                                    </DokumentelementText>
+                                    <DokumentelementEingabefeld Id="EinwilligungKontaktEMail" Datentyp="BOOLEAN">
+                                        <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                                        <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                                        <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                                        <JaNeinFeld>
+                                            <Darstellung>Sichtbar</Darstellung>
+                                            <Id>V.Z.Login.EinwilligungKontaktEMail</Id>
+                                            <Titel Standard="Ich möchte per E-Mail kontaktiert werden. Die Information zur elektronischen Kommunikation habe ich zur Kenntnis genommen und stimme dieser zu."/>
+                                            <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                                            <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                                            <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                                        </JaNeinFeld>
+                                        <Datenverweis>V.Z.Login.EinwilligungKontaktEMail</Datenverweis>
+                                    </DokumentelementEingabefeld>
+                                    <DokumentelementText>
+                                        <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                                        <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                                        <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                                        <Objekt/>
+                                        <Style/>
+                                        <Text Standard="Bestätigung Einverständnis der Nutzung von Daten Dritter*"/>
+                                        <Typ>Standard</Typ>
+                                        <Zeilen>0</Zeilen>
+                                    </DokumentelementText>
+                                    <DokumentelementEingabefeld Id="AbfrageDatenDritter" Datentyp="BOOLEAN">
+                                        <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                                        <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                                        <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                                        <JaNeinFeld>
+                                            <Darstellung>Pflichtfeld</Darstellung>
+                                            <Id>V.Z.Login.AbfrageDatenDritter</Id>
+                                            <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                                            <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                                            <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                                        </JaNeinFeld>
+                                        <Datenverweis>V.Z.Login.AbfrageDatenDritter</Datenverweis>
+                                    </DokumentelementEingabefeld>
+                                    <DokumentelementText>
+                                        <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                                        <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                                        <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                                        <Objekt/>
+                                        <Style/>
+                                        <Text Standard=" "/>
+                                        <Typ>Standard</Typ>
+                                        <Zeilen>0</Zeilen>
+                                    </DokumentelementText>
+                                    <DokumentelementText>
+                                        <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                                        <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                                        <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                                        <Id>ZugangsdatenHead</Id>
+                                        <Objekt/>
+                                        <Style/>
+                                        <Text Standard="&lt;h3&gt;Eingabe der Zugangsdaten&lt;/h3&gt;"/>
+                                        <Typ>Standard</Typ>
+                                        <Zeilen>0</Zeilen>
+                                    </DokumentelementText>
+                                    <DokumentelementEingabefeld Id="idParent" Datentyp="STRING">
+                                        <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                                        <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                                        <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                                        <Textfeld>
+                                            <Darstellung>Pflichtfeld</Darstellung>
+                                            <Id>V.Z.Login.idParent</Id>
+                                            <Titel Standard="Benutzerkennung"/>
+                                            <FeldlaengeDesktopInProzent>5</FeldlaengeDesktopInProzent>
+                                            <FeldlaengeTabletInProzent>5</FeldlaengeTabletInProzent>
+                                            <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                                            <Vorbelegung></Vorbelegung>
+                                            <AnzahlZeilen>1</AnzahlZeilen>
+                                            <IsPasswort>false</IsPasswort>
+                                        </Textfeld>
+                                        <Datenverweis>V.Z.Login.idParent</Datenverweis>
+                                    </DokumentelementEingabefeld>
+                                    <DokumentelementText>
+                                        <FeldlaengeDesktopInProzent>1</FeldlaengeDesktopInProzent>
+                                        <FeldlaengeTabletInProzent>1</FeldlaengeTabletInProzent>
+                                        <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                                        <Id>ZugangsdatenInfo1</Id>
+                                        <Objekt/>
+                                        <Style/>
+                                        <Text Standard="&lt;br&gt;"/>
+                                        <Typ>Standard</Typ>
+                                        <Zeilen>0</Zeilen>
+                                    </DokumentelementText>
+                                    <DokumentelementEingabefeld Id="password" Datentyp="STRING">
+                                        <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                                        <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                                        <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                                        <Textfeld>
+                                            <Darstellung>Pflichtfeld</Darstellung>
+                                            <Id>V.Z.Login.password</Id>
+                                            <Titel Standard="Passwort"/>
+                                            <FeldlaengeDesktopInProzent>5</FeldlaengeDesktopInProzent>
+                                            <FeldlaengeTabletInProzent>5</FeldlaengeTabletInProzent>
+                                            <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                                            <Vorbelegung></Vorbelegung>
+                                            <AnzahlZeilen>1</AnzahlZeilen>
+                                            <IsPasswort>true</IsPasswort>
+                                        </Textfeld>
+                                        <Datenverweis>V.Z.Login.password</Datenverweis>
+                                    </DokumentelementEingabefeld>
+                                    <DokumentelementText>
+                                        <FeldlaengeDesktopInProzent>5</FeldlaengeDesktopInProzent>
+                                        <FeldlaengeTabletInProzent>5</FeldlaengeTabletInProzent>
+                                        <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                                        <Id>InfoidParent</Id>
+                                        <Objekt/>
+                                        <Style/>
+                                        <Typ>Standard</Typ>
+                                        <Zeilen>0</Zeilen>
+                                    </DokumentelementText>
+                                    <DokumentelementText>
+                                        <FeldlaengeDesktopInProzent>1</FeldlaengeDesktopInProzent>
+                                        <FeldlaengeTabletInProzent>1</FeldlaengeTabletInProzent>
+                                        <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                                        <Id>ZugangsdatenInfo2</Id>
+                                        <Objekt/>
+                                        <Style/>
+                                        <Text Standard="&lt;br&gt;"/>
+                                        <Typ>Standard</Typ>
+                                        <Zeilen>0</Zeilen>
+                                    </DokumentelementText>
+                                    <DokumentelementText>
+                                        <FeldlaengeDesktopInProzent>5</FeldlaengeDesktopInProzent>
+                                        <FeldlaengeTabletInProzent>5</FeldlaengeTabletInProzent>
+                                        <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                                        <Id>PasswortInfo</Id>
+                                        <Objekt/>
+                                        <Style/>
+                                        <Typ>Standard</Typ>
+                                        <Zeilen>0</Zeilen>
+                                    </DokumentelementText>
+                                    <DokumentelementText>
+                                        <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                                        <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                                        <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                                        <Id>Zugangsdaten</Id>
+                                        <Objekt/>
+                                        <Style/>
+                                        <Text Standard="&lt;br&gt;&lt;h3&gt;Ohne Zugangsdaten fortfahren&lt;/h3&gt;"/>
+                                        <Typ>Standard</Typ>
+                                        <Zeilen>0</Zeilen>
+                                    </DokumentelementText>
+                                    <DokumentelementEingabefeld Id="Benutzerkontonutzung" Datentyp="BOOLEAN">
+                                        <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                                        <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                                        <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                                        <JaNeinFeld>
+                                            <Darstellung>Sichtbar</Darstellung>
+                                            <Id>V.Z.Login.Benutzerkontonutzung</Id>
+                                            <Titel Standard="Ich möchte ohne Login fortfahren."/>
+                                            <FeldlaengeDesktopInProzent>12</FeldlaengeDesktopInProzent>
+                                            <FeldlaengeTabletInProzent>12</FeldlaengeTabletInProzent>
+                                            <FeldlaengeMobilInProzent>12</FeldlaengeMobilInProzent>
+                                            <AktionAusblenden>
+                                                <ReferenzId>ZugangsdatenHead</ReferenzId>
+                                                <Vergleichswert>TRUE</Vergleichswert>
+                                                <Operator>Gleich</Operator>
+                                            </AktionAusblenden>
+                                            <AktionAusblenden>
+                                                <ReferenzId>V.Z.Login.idParent</ReferenzId>
+                                                <Vergleichswert>TRUE</Vergleichswert>
+                                                <Operator>Gleich</Operator>
+                                            </AktionAusblenden>
+                                            <AktionAusblenden>
+                                                <ReferenzId>ZugangsdatenInfo1</ReferenzId>
+                                                <Vergleichswert>TRUE</Vergleichswert>
+                                                <Operator>Gleich</Operator>
+                                            </AktionAusblenden>
+                                            <AktionAusblenden>
+                                                <ReferenzId>ZugangsdatenInfo2</ReferenzId>
+                                                <Vergleichswert>TRUE</Vergleichswert>
+                                                <Operator>Gleich</Operator>
+                                            </AktionAusblenden>
+                                            <AktionAusblenden>
+                                                <ReferenzId>InfoidParent</ReferenzId>
+                                                <Vergleichswert>TRUE</Vergleichswert>
+                                                <Operator>Gleich</Operator>
+                                            </AktionAusblenden>
+                                            <AktionAusblenden>
+                                                <ReferenzId>PasswortInfo</ReferenzId>
+                                                <Vergleichswert>TRUE</Vergleichswert>
+                                                <Operator>Gleich</Operator>
+                                            </AktionAusblenden>
+                                            <AktionAusblenden>
+                                                <ReferenzId>V.Z.Login.password</ReferenzId>
+                                                <Vergleichswert>TRUE</Vergleichswert>
+                                                <Operator>Gleich</Operator>
+                                            </AktionAusblenden>
+                                        </JaNeinFeld>
+                                        <Datenverweis>V.Z.Login.Benutzerkontonutzung</Datenverweis>
+                                    </DokumentelementEingabefeld>
+                                </DokumentelementGruppe>
+                            </DynamischesFormular>
+                            <ZurAkteHinzufuegen>false</ZurAkteHinzufuegen>
+                        </DokumentAnzeigen>
+                        <DatenvariableSetzen Id="1287536640">
+                            <Active>true</Active>
+                            <Ausdruck>
+                                <Ausdruck>hashWert(V.Z.Login.idParent) </Ausdruck>
+                            </Ausdruck>
+                            <Datenverweis>V.Z.TMP.case</Datenverweis>
+                        </DatenvariableSetzen>
+                        <DatenvariableSetzen Id="46541636585623">
+                            <Comment>PIN Hash</Comment>
+                            <Active>true</Active>
+                            <Ausdruck>
+                                <Ausdruck>hashWert(V.Z.Login.password) </Ausdruck>
+                            </Ausdruck>
+                            <Datenverweis>V.Z.TMP.type</Datenverweis>
+                        </DatenvariableSetzen>
+                        <Expanded>true</Expanded>
+                    </Entscheidungszweig>
+                    <Expanded>true</Expanded>
+                </Entscheidungselement>
+                <Entscheidungselement Id="51194427260876">
+                    <Active>true</Active>
+                    <Entscheidungszweig Id="46446523568992">
+                        <Comment>OHNE Benutzerkonto</Comment>
+                        <Active>true</Active>
+                        <Ausdruck>
+                            <Ausdruck>V.Z.Login.Benutzerkontonutzung </Ausdruck>
+                        </Ausdruck>
+                        <DatenvariableSetzen Id="100653306522812">
+                            <Active>true</Active>
+                            <Ausdruck>
+                                <Ausdruck>hashWert(V.Ident) </Ausdruck>
+                            </Ausdruck>
+                            <Datenverweis>V.Z.TMP.case</Datenverweis>
+                        </DatenvariableSetzen>
+                        <EreignisAusloesen Id="-514353597196127">
+                            <Comment>Neuen anonymen NISV Account anlegen</Comment>
+                            <Active>true</Active>
+                            <NameDesEreignisses>Neuen anonymen NISV Account anlegen</NameDesEreignisses>
+                        </EreignisAusloesen>
+                        <AbschlussseiteAnzeigen Id="721571698992820">
+                            <Comment>Link zur Öffnung des Stamm Prozesses mit Parametern in URL zum automatischen Login in den neuen Account</Comment>
+                            <Active>true</Active>
+                            <Titel Standard="Anonymer Antrag"/>
+                            <Meldung Standard="&lt;p&gt;Sie nutzen die Anzeige nach der nichtionisierenden Strahlenschutzverordnung (NiSV) &amp;uuml;ber dieses Portal anonym.&lt;/p&gt; &lt;p&gt;Bitte folgen Sie folgendem &lt;a title=&quot;Link&quot; href=&quot;$$VE.NISVKonfig.LinkNISVStamm$$&amp;amp;V.Z.TMP.case=$$V.Z.TMP.case$$&amp;amp;V.Z.TMP.type=anonym&quot;&gt;Link &amp;gt;&amp;gt;&lt;/a&gt;&lt;/p&gt;"/>
+                            <ProzessName Standard="Anonymer Antrag"/>
+                            <DokumentDownloadregel/>
+                            <DokDownloadRegelAufGespeichrteDokumenteAnwenden>false</DokDownloadRegelAufGespeichrteDokumenteAnwenden>
+                            <DokumentDownloadregelAuchImHauptvorgangAnwenden>false</DokumentDownloadregelAuchImHauptvorgangAnwenden>
+                            <VorgangNeuStarten>false</VorgangNeuStarten>
+                            <ZusammenfassungAllerDokumente>false</ZusammenfassungAllerDokumente>
+                        </AbschlussseiteAnzeigen>
+                        <Expanded>true</Expanded>
+                    </Entscheidungszweig>
+                    <Entscheidungszweig Id="79487425072935">
+                        <Comment>MIT Benutzerkonto</Comment>
+                        <Active>true</Active>
+                        <Ausdruck>
+                            <Ausdruck>not(V.Z.Login.Benutzerkontonutzung) </Ausdruck>
+                        </Ausdruck>
+                        <Entscheidungselement Id="1062437943870384">
+                            <Active>true</Active>
+                            <Entscheidungszweig Id="284741153973192">
+                                <Active>true</Active>
+                                <Ausdruck>
+                                    <Ausdruck>not(V.Z.TMP.type = "anonym")</Ausdruck>
+                                </Ausdruck>
+                                <VerknuepfungZumHauptvorgangHinzufuegen Id="-347966905633899">
+                                    <Comment>Verknüpfung zum Arbeitsschutz Account</Comment>
+                                    <Active>true</Active>
+                                    <Kriterium>V.Z.TMP.case </Kriterium>
+                                    <Vorgangsart>Account</Vorgangsart>
+                                    <Suchtyp>NameMerkmal4</Suchtyp>
+                                    <Pruefausdruck>V.Z.TMP.type = V.HV.Z.Z.Token </Pruefausdruck>
+                                </VerknuepfungZumHauptvorgangHinzufuegen>
+                                <Entscheidungselement Id="-582088994952372">
+                                    <Active>true</Active>
+                                    <Entscheidungszweig Id="-230071818517492">
+                                        <Active>true</Active>
+                                        <Ausdruck>
+                                            <Ausdruck>not(V.HasParent) </Ausdruck>
+                                        </Ausdruck>
+                                        <MeldungAnzeigen Id="366702082687539">
+                                            <Active>true</Active>
+                                            <Titel Standard="Falsche Login-Daten"/>
+                                            <Meldung Standard="Bitte prüfen Sie Ihre Eingabe."/>
+                                            <ProzessName Standard="Falsche Login-Daten"/>
+                                            <Fehlermeldung>true</Fehlermeldung>
+                                            <IsEinverstaendnis>false</IsEinverstaendnis>
+                                        </MeldungAnzeigen>
+                                        <Expanded>true</Expanded>
+                                    </Entscheidungszweig>
+                                    <Expanded>true</Expanded>
+                                </Entscheidungselement>
+                                <Entscheidungselement Id="-491676799279173">
+                                    <Active>true</Active>
+                                    <Entscheidungszweig Id="-556253835267269">
+                                        <Comment>Prüfung ob der Arbeitsschutz Account verifiziert wurde</Comment>
+                                        <Active>true</Active>
+                                        <Ausdruck>
+                                            <Ausdruck>not(V.HV.Z.Z.ConfirmStatus)</Ausdruck>
+                                        </Ausdruck>
+                                        <MeldungAnzeigen Id="-742291685864650">
+                                            <Active>true</Active>
+                                            <Titel Standard="Unbestätigte Registrierung"/>
+                                            <ProzessName Standard="Unbestätigte Registrierung"/>
+                                            <Fehlermeldung>false</Fehlermeldung>
+                                            <IsEinverstaendnis>false</IsEinverstaendnis>
+                                        </MeldungAnzeigen>
+                                        <Expanded>true</Expanded>
+                                    </Entscheidungszweig>
+                                    <Expanded>true</Expanded>
+                                </Entscheidungselement>
+                                <SequenzielleListe Id="202888336140829">
+                                    <Comment>Lade Accountdaten von Arbeitsschutz-Account</Comment>
+                                    <Active>true</Active>
+                                    <DatenvariableSetzen Id="259945079395360">
+                                        <Active>true</Active>
+                                        <Ausdruck>
+                                            <Ausdruck>V.HV.AS</Ausdruck>
+                                        </Ausdruck>
+                                        <Datenverweis>V.AS</Datenverweis>
+                                    </DatenvariableSetzen>
+                                    <DatenvariableSetzen Id="413862116540351">
+                                        <Active>true</Active>
+                                        <Ausdruck>
+                                            <Ausdruck>V.AS.Strasse</Ausdruck>
+                                        </Ausdruck>
+                                        <Datenverweis>V.Z.IA.BetriebsstaetteAcc.Strasse</Datenverweis>
+                                    </DatenvariableSetzen>
+                                    <DatenvariableSetzen Id="-219052992109065">
+                                        <Active>true</Active>
+                                        <Ausdruck>
+                                            <Ausdruck>V.AS.Hausnummer</Ausdruck>
+                                        </Ausdruck>
+                                        <Datenverweis>V.Z.IA.BetriebsstaetteAcc.Hausnummer</Datenverweis>
+                                    </DatenvariableSetzen>
+                                    <DatenvariableSetzen Id="-238381855122679">
+                                        <Active>true</Active>
+                                        <Ausdruck>
+                                            <Ausdruck>V.AS.Hausnummernzusatz</Ausdruck>
+                                        </Ausdruck>
+                                        <Datenverweis>V.Z.IA.BetriebsstaetteAcc.Hausnummernzusatz</Datenverweis>
+                                    </DatenvariableSetzen>
+                                    <DatenvariableSetzen Id="472238783535575">
+                                        <Active>true</Active>
+                                        <Ausdruck>
+                                            <Ausdruck>V.AS.Postleitzahl</Ausdruck>
+                                        </Ausdruck>
+                                        <Datenverweis>V.Z.IA.BetriebsstaetteAcc.Postleitzahl</Datenverweis>
+                                    </DatenvariableSetzen>
+                                    <DatenvariableSetzen Id="-734938284145573">
+                                        <Active>true</Active>
+                                        <Ausdruck>
+                                            <Ausdruck>V.AS.Ort</Ausdruck>
+                                        </Ausdruck>
+                                        <Datenverweis>V.Z.IA.BetriebsstaetteAcc.Ort</Datenverweis>
+                                    </DatenvariableSetzen>
+                                    <DatenvariableSetzen Id="-793273057357027">
+                                        <Active>true</Active>
+                                        <Ausdruck>
+                                            <Ausdruck>V.AS</Ausdruck>
+                                        </Ausdruck>
+                                        <Datenverweis>V.Z.IA.Arbeitgeber</Datenverweis>
+                                    </DatenvariableSetzen>
+                                    <DatenvariableSetzen Id="537203699111917">
+                                        <Active>true</Active>
+                                        <Ausdruck>
+                                            <Ausdruck>V.HV.Z.D.TitelK</Ausdruck>
+                                        </Ausdruck>
+                                        <Datenverweis>V.Z.IA.TitelK</Datenverweis>
+                                    </DatenvariableSetzen>
+                                    <DatenvariableSetzen Id="549005305174248">
+                                        <Active>true</Active>
+                                        <Ausdruck>
+                                            <Ausdruck>V.HV.Z.D.NameK</Ausdruck>
+                                        </Ausdruck>
+                                        <Datenverweis>V.Z.IA.NameK</Datenverweis>
+                                    </DatenvariableSetzen>
+                                    <DatenvariableSetzen Id="-775529852518875">
+                                        <Active>true</Active>
+                                        <Ausdruck>
+                                            <Ausdruck>V.HV.Z.D.VornameK</Ausdruck>
+                                        </Ausdruck>
+                                        <Datenverweis>V.Z.IA.VornameK</Datenverweis>
+                                    </DatenvariableSetzen>
+                                    <DatenvariableSetzen Id="-836940749638111">
+                                        <Active>true</Active>
+                                        <Ausdruck>
+                                            <Ausdruck>V.HV.Z.D.TelefonnummerK</Ausdruck>
+                                        </Ausdruck>
+                                        <Datenverweis>V.Z.IA.TelefonnummerK</Datenverweis>
+                                    </DatenvariableSetzen>
+                                    <DatenvariableSetzen Id="850249414808976">
+                                        <Active>true</Active>
+                                        <Ausdruck>
+                                            <Ausdruck>V.HV.Z.D.eMailK</Ausdruck>
+                                        </Ausdruck>
+                                        <Datenverweis>V.Z.IA.eMailK</Datenverweis>
+                                    </DatenvariableSetzen>
+                                    <Expanded>false</Expanded>
+                                </SequenzielleListe>
+                                <Expanded>false</Expanded>
+                            </Entscheidungszweig>
+                            <Expanded>false</Expanded>
+                        </Entscheidungselement>
+                        <Entscheidungselement Id="-263423902854702">
+                            <Active>true</Active>
+                            <Entscheidungszweig Id="973203419022720">
+                                <Comment>Ein NISV-Account besteht</Comment>
+                                <Active>true</Active>
+                                <Ausdruck>
+                                    <Ausdruck>zaehleVorgaenge("V.Z.username = " + V.Z.TMP.case, "NISVAcc") &gt; 0 </Ausdruck>
+                                </Ausdruck>
+                                <VerknuepfungZumHauptvorgangHinzufuegen Id="-219269161767375">
+                                    <Comment>Verknüpfung mit NISV Account</Comment>
+                                    <Active>true</Active>
+                                    <Kriterium>V.Z.TMP.case</Kriterium>
+                                    <Vorgangsart>NISVAcc</Vorgangsart>
+                                    <Suchtyp>NameMerkmal1</Suchtyp>
+                                    <Pruefausdruck>V.Z.TMP.type = V.HV.Z.Login.password</Pruefausdruck>
+                                </VerknuepfungZumHauptvorgangHinzufuegen>
+                                <Entscheidungselement Id="-408267467199378">
+                                    <Active>true</Active>
+                                    <Entscheidungszweig Id="-842006618353712">
+                                        <Active>true</Active>
+                                        <Ausdruck>
+                                            <Ausdruck>not(V.HasParent) </Ausdruck>
+                                        </Ausdruck>
+                                        <MeldungAnzeigen Id="-335244189947196">
+                                            <Active>true</Active>
+                                            <Titel Standard="Falsche Login-Daten"/>
+                                            <Meldung Standard="Bitte prüfen Sie Ihre Eingabe."/>
+                                            <ProzessName Standard="Falsche Login-Daten"/>
+                                            <Fehlermeldung>true</Fehlermeldung>
+                                            <IsEinverstaendnis>false</IsEinverstaendnis>
+                                        </MeldungAnzeigen>
+                                        <Expanded>true</Expanded>
+                                    </Entscheidungszweig>
+                                    <Expanded>true</Expanded>
+                                </Entscheidungselement>
+                                <DatenvariableSetzen Id="-489221053426500">
+                                    <Active>true</Active>
+                                    <Ausdruck>
+                                        <Ausdruck>V.HV.Z.TMP.relationsHTML</Ausdruck>
+                                    </Ausdruck>
+                                    <Datenverweis>V.Z.PD.htmlText</Datenverweis>
+                                </DatenvariableSetzen>
+                                <Entscheidungselement Id="385865964144527">
+                                    <Active>true</Active>
+                                    <Entscheidungszweig Id="-854290540823522">
+                                        <Active>true</Active>
+                                        <Ausdruck>
+                                            <Ausdruck>not(isNull(V.Z.Login.password)) </Ausdruck>
+                                        </Ausdruck>
+                                        <MeldungAnzeigen Id="837972089839323">
+                                            <Active>true</Active>
+                                            <Titel Standard="Login erfolgreich"/>
+                                            <ProzessName Standard="Login erfolgreich"/>
+                                            <Fehlermeldung>false</Fehlermeldung>
+                                            <IsEinverstaendnis>false</IsEinverstaendnis>
+                                        </MeldungAnzeigen>
+                                        <Expanded>true</Expanded>
+                                    </Entscheidungszweig>
+                                    <Expanded>true</Expanded>
+                                </Entscheidungselement>
+                                <WorkflowvariableSetzen Id="-221562059237912">
+                                    <Comment>set css</Comment>
+                                    <Active>false</Active>
+                                    <Wert>"&lt;style&gt;     /* Style the navigation menu */     .navbar {         width: 100%;         background-color: #fff;         overflow: auto;     }      /* Navigation links */     .navbar a {         float: left;         vertical-align: top; /* Keep the item on the very top */         width: 32.5%;         padding: 0 auto;         color: white;         text-decoration: none;         text-align: center;         font-weight: bold;         min-height: 100px;         line-height: 100px;         font-size: medium;         border: 3px solid rgb(245, 244, 244) !important;         letter-spacing: 1.25px;         font-family: sans-serif;         border-radius: 10px !important;         background-color: #14133b;         transition: all .3s ease-in-out;      }     .navbar a:hover {         box-shadow: 0 0 11px rgba(33,33,33,.2);         background-color: #4e4d6c;         color: white !important;     }     /* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */     @media only screen and (max-width: 1280px) {     .navbar a {         float: none;         display: block;         width: 98%;         min-height: 50px;         line-height: 50px;         font-size: medium;     }     } &lt;/style&gt;"</Wert>
+                                    <Workflowvariable Datentyp="STRING" Variablenname="html"/>
+                                </WorkflowvariableSetzen>
+                                <WorkflowvariableSetzen Id="692918847270412">
+                                    <Comment>set menu</Comment>
+                                    <Active>false</Active>
+                                    <Wert>html + "&lt;div class='navbar'&gt; &lt;a target='_blank' href='" + VE.NISVKonfig.LinkNISVStamm + "&amp;amp;V.Z.Login.idParent=" + V.Z.Login.idParent + "&amp;amp;V.Z.TMP.type=" + V.Z.TMP.type+ "'&gt;Stammdaten bearbeiten&lt;/a&gt; &lt;a target='_blank' href='" + VE.NISVKonfig.LinkNISVAddPersonAndResource + "&amp;amp;V.Z.Login.idParent=" + V.Z.Login.idParent + "&amp;amp;V.Z.TMP.type=" + V.Z.TMP.type +"'&gt;Geräte und Mitarbeiter bearbeiten&lt;/a&gt; &lt;a target='_blank' href='" + VE.NISVKonfig.LinkLinkPersonToResource + "&amp;amp;V.Z.Login.idParent=" + V.Z.Login.idParent + "&amp;amp;V.Z.TMP.type=" + V.Z.TMP.type+ "'&gt;Geräte und Mitarbeiter verknüpfen&lt;/a&gt; &lt;/div&gt;"</Wert>
+                                    <Workflowvariable Datentyp="STRING" Variablenname="html"/>
+                                </WorkflowvariableSetzen>
+                                <Entscheidungselement Id="-294750861338296">
+                                    <Active>true</Active>
+                                    <Entscheidungszweig Id="-996988094442504">
+                                        <Active>true</Active>
+                                        <Ausdruck>
+                                            <Ausdruck>isNull(V.Z.PD.htmlText) </Ausdruck>
+                                        </Ausdruck>
+                                        <DokumentAnzeigen Id="890298423911793">
+                                            <Active>true</Active>
+                                            <Titel Standard="Übersicht"/>
+                                            <Meldung Standard="&lt;style&gt;$$V.Z.PD.CSSdisplay$$&lt;/style&gt;&lt;div class='navbar'&gt; &lt;a class='nav-item' href='$$VE.NISVKonfig.LinkNISVStamm$$&amp;V.Z.TMP.case=$$V.Z.TMP.case$$&amp;V.Z.TMP.type=$$V.Z.TMP.type$$' title='Stammdaten bearbeiten'&gt;Stammdaten bearbeiten&lt;/a&gt; &lt;a class='nav-item' href='$$VE.NISVKonfig.LinkNISVAddPersonAndResource$$&amp;V.Z.TMP.case=$$V.Z.TMP.case$$&amp;V.Z.TMP.type=$$V.Z.TMP.type$$' title='Geräte und Mitarbeiter anlegen'&gt;Geräte und Mitarbeiter anlegen&lt;/a&gt; &lt;a class='nav-item' href='$$VE.NISVKonfig.LinkLinkPersonToResource$$&amp;V.Z.TMP.case=$$V.Z.TMP.case$$&amp;V.Z.TMP.type=$$V.Z.TMP.type$$' title='Geräte und Mitarbeiter verknüpfen'&gt;Geräte und Mitarbeiter verknüpfen&lt;/a&gt; &lt;/div&gt; &lt;p&gt;&amp;nbsp; &lt;/p&gt; &lt;p&gt;Sie haben noch keine Geräte für Ihren Betrieb angelegt.&lt;/p&gt;"/>
+                                            <Abschlussmeldung Standard="Wenn Sie &lt;strong&gt;&quot;Weiter&quot;&lt;/strong&gt; klicken, wird der Vorgang abgeschlossen und die Daten im Fachverfahren werden aktualisiert."/>
+                                            <ProzessName Standard="Übersicht"/>
+                                            <DynamischesFormular>
+                                                <Name Standard="Übersicht"/>
+                                                <Klassifizierung>Antragsdokument</Klassifizierung>
+                                                <DokumentverweisVorlage/>
+                                            </DynamischesFormular>
+                                            <ZurAkteHinzufuegen>false</ZurAkteHinzufuegen>
+                                        </DokumentAnzeigen>
+                                        <Expanded>true</Expanded>
+                                    </Entscheidungszweig>
+                                    <Entscheidungszweig Id="-680197681142705">
+                                        <Active>true</Active>
+                                        <Ausdruck>
+                                            <Ausdruck>not(isNull(V.Z.PD.htmlText))</Ausdruck>
+                                        </Ausdruck>
+                                        <DokumentAnzeigen Id="-218321024857617">
+                                            <Comment>&lt;style&gt; /* Style the navigation menu */ .navbar {  width: 100%;  background-color: #fff;  overflow: auto; } /* Navigation links */ .navbar a {  float: left;  vertical-align: top;  /* Keep the item on the very top */  width: 32.5%;  padding: 0 auto;  color: white;  text-decoration: none;  text-align: center;  font-weight: bold;  min-height: 100px;  line-height: 100px;  font-size: medium;  border: 3px solid rgb(245, 244, 244) !important;  letter-spacing: 1.25px;  font-family: sans-serif;  border-r</Comment>
+                                            <Active>true</Active>
+                                            <Titel Standard="Übersicht"/>
+                                            <Meldung Standard="&lt;style&gt;$$V.Z.PD.CSSdisplay$$&lt;/style&gt;&lt;div class='navbar'&gt; &lt;a class='nav-item' href='$$VE.NISVKonfig.LinkNISVStamm$$&amp;V.Z.TMP.case=$$V.Z.TMP.case$$&amp;V.Z.TMP.type=$$V.Z.TMP.type$$' title='Stammdaten bearbeiten'&gt;Stammdaten bearbeiten&lt;/a&gt; &lt;a class='nav-item' href='$$VE.NISVKonfig.LinkNISVAddPersonAndResource$$&amp;V.Z.TMP.case=$$V.Z.TMP.case$$&amp;V.Z.TMP.type=$$V.Z.TMP.type$$' title='Geräte und Mitarbeiter anlegen'&gt;Geräte und Mitarbeiter anlegen&lt;/a&gt; &lt;a class='nav-item' href='$$VE.NISVKonfig.LinkLinkPersonToResource$$&amp;V.Z.TMP.case=$$V.Z.TMP.case$$&amp;V.Z.TMP.type=$$V.Z.TMP.type$$' title='Geräte und Mitarbeiter verknüpfen'&gt;Geräte und Mitarbeiter verknüpfen&lt;/a&gt; &lt;/div&gt; &lt;p&gt;&amp;nbsp; &lt;/p&gt;&lt;p&gt;&amp;nbsp; &lt;/p&gt; &lt;h2 class=&quot;navbar&quot;&gt;Ger&amp;auml;te und zugeordnete Mitarbeiter&lt;/h2&gt; &lt;p&gt;$$V.Z.PD.htmlText$$&lt;/p&gt;"/>
+                                            <Abschlussmeldung Standard="Wenn Sie &lt;strong&gt;&quot;Weiter&quot;&lt;/strong&gt; klicken, wird der Vorgang abgeschlossen und die Daten im Fachverfahren werden aktualisiert."/>
+                                            <ProzessName Standard="Übersicht"/>
+                                            <DynamischesFormular>
+                                                <Name Standard="Übersicht"/>
+                                                <Klassifizierung>Antragsdokument</Klassifizierung>
+                                                <DokumentverweisVorlage/>
+                                            </DynamischesFormular>
+                                            <ZurAkteHinzufuegen>false</ZurAkteHinzufuegen>
+                                        </DokumentAnzeigen>
+                                        <Expanded>true</Expanded>
+                                    </Entscheidungszweig>
+                                    <Expanded>true</Expanded>
+                                </Entscheidungselement>
+                                <AbschlussseiteAnzeigen Id="-341218787789469">
+                                    <Active>true</Active>
+                                    <Titel Standard="Abschluss"/>
+                                    <Meldung Standard=" "/>
+                                    <Abschlussmeldung Standard="Ihre Daten wurden aktualisiert. Sie können diese Seite nun schließen."/>
+                                    <ProzessName Standard="Abschluss"/>
+                                    <DokumentDownloadregel/>
+                                    <DokDownloadRegelAufGespeichrteDokumenteAnwenden>false</DokDownloadRegelAufGespeichrteDokumenteAnwenden>
+                                    <DokumentDownloadregelAuchImHauptvorgangAnwenden>false</DokumentDownloadregelAuchImHauptvorgangAnwenden>
+                                    <VorgangNeuStarten>false</VorgangNeuStarten>
+                                    <ZusammenfassungAllerDokumente>false</ZusammenfassungAllerDokumente>
+                                </AbschlussseiteAnzeigen>
+                                <Expanded>false</Expanded>
+                            </Entscheidungszweig>
+                            <Entscheidungszweig Id="-217894032925678">
+                                <Comment>Es besteht noch KEIN NISV-Account</Comment>
+                                <Active>true</Active>
+                                <Ausdruck>
+                                    <Ausdruck>zaehleVorgaenge("V.Z.username = " + V.Z.TMP.case, "NISVAcc") = 0 </Ausdruck>
+                                </Ausdruck>
+                                <EreignisAusloesen Id="-1355809184">
+                                    <Comment>Neuen NISV Account anlegen</Comment>
+                                    <Active>true</Active>
+                                    <NameDesEreignisses>Neuen NISV Account anlegen</NameDesEreignisses>
+                                </EreignisAusloesen>
+                                <AbschlussseiteAnzeigen Id="1644540112">
+                                    <Comment>Link zur Öffnung des Stamm Prozesses mit Parametern in URL zum automatischen Login in den neuen Account</Comment>
+                                    <Active>true</Active>
+                                    <Titel Standard="Erstmaliger Login"/>
+                                    <Meldung Standard="&lt;p&gt;Sie nutzen die Anzeige nach der nichtionisierenden Strahlenschutzverordnung (NiSV) &amp;uuml;ber dieses Portal zum ersten Mal.&lt;/p&gt; &lt;p&gt;Bitte folgen Sie folgendem &lt;a title=&quot;Link&quot; href=&quot;$$VE.NISVKonfig.LinkNISVStamm$$&amp;amp;V.Z.TMP.case=$$V.Z.TMP.case$$&amp;amp;V.Z.TMP.type=$$V.Z.TMP.type$$&quot;&gt;Link &amp;gt;&amp;gt;&lt;/a&gt;&lt;/p&gt;"/>
+                                    <ProzessName Standard="Erstmaliger Login"/>
+                                    <DokumentDownloadregel/>
+                                    <DokDownloadRegelAufGespeichrteDokumenteAnwenden>false</DokDownloadRegelAufGespeichrteDokumenteAnwenden>
+                                    <DokumentDownloadregelAuchImHauptvorgangAnwenden>false</DokumentDownloadregelAuchImHauptvorgangAnwenden>
+                                    <VorgangNeuStarten>false</VorgangNeuStarten>
+                                    <ZusammenfassungAllerDokumente>false</ZusammenfassungAllerDokumente>
+                                </AbschlussseiteAnzeigen>
+                                <Expanded>true</Expanded>
+                            </Entscheidungszweig>
+                            <Expanded>false</Expanded>
+                        </Entscheidungselement>
+                        <Expanded>false</Expanded>
+                    </Entscheidungszweig>
+                    <Expanded>false</Expanded>
+                </Entscheidungselement>
+                <Expanded>false</Expanded>
+            </Startelement>
+        </Erfassungsworkflow>
+        <Vorgangsworkflow AutomatischStartenBei="EG, Eingegangen" Id="1395630192050757">
+            <Workflowdefinition Id="3493707440547725">
+                <Startelement Id="688858769158386">
+                    <Active>true</Active>
+                    <VorgangsstatusSetzen Id="430061736079800">
+                        <Active>true</Active>
+                        <Status>AG, Abgeschlossen</Status>
+                    </VorgangsstatusSetzen>
+                    <Expanded>true</Expanded>
+                </Startelement>
+            </Workflowdefinition>
+        </Vorgangsworkflow>
+        <Vorgangsworkflow AutomatischStartenBei="AG, Abgeschlossen" Id="315782608622496">
+            <Workflowdefinition Id="358057643883706">
+                <Startelement Id="112085579964479">
+                    <Active>true</Active>
+                    <DatenvariableSetzen Id="-843714576">
+                        <Active>true</Active>
+                        <Ausdruck/>
+                        <Datenverweis>V.Z.Login.password</Datenverweis>
+                    </DatenvariableSetzen>
+                    <DatenvariableSetzen Id="-322900411316898">
+                        <Active>true</Active>
+                        <Ausdruck>
+                            <Ausdruck>""</Ausdruck>
+                        </Ausdruck>
+                        <Datenverweis>V.Z.TMP.type</Datenverweis>
+                    </DatenvariableSetzen>
+                    <DatenvariableSetzen Id="947404084311168">
+                        <Active>true</Active>
+                        <Ausdruck/>
+                        <Datenverweis>V.Z.Login.idParent</Datenverweis>
+                    </DatenvariableSetzen>
+                    <Entscheidungselement Id="1945861914653811">
+                        <Active>true</Active>
+                        <Entscheidungszweig Id="720554078865962">
+                            <Active>true</Active>
+                            <Ausdruck>
+                                <Ausdruck>V.Z.TMP.type = "anonym" </Ausdruck>
+                            </Ausdruck>
+                            <AufgabeAktivieren Id="1250001486560256">
+                                <Active>true</Active>
+                                <EreignisseAusloesenSystemaufgabe>
+                                    <Name>HV löschen</Name>
+                                    <Beschreibung>HV löschen</Beschreibung>
+                                    <Standardfaelligkeit/>
+                                    <Zustaendigkeit/>
+                                    <Ausfuehrungsbedingung/>
+                                    <AusfuherungNurInZustaendigerOeErlaubt>false</AusfuherungNurInZustaendigerOeErlaubt>
+                                    <DokumenteWeiterleitenRegel/>
+                                    <Ereignis>Vorgangsdaten löschen</Ereignis>
+                                    <MitAktuellemVorgang>false</MitAktuellemVorgang>
+                                    <MitHauptvorgang>true</MitHauptvorgang>
+                                    <MitUntervorgaengen>false</MitUntervorgaengen>
+                                    <Nachgelagert>false</Nachgelagert>
+                                </EreignisseAusloesenSystemaufgabe>
+                            </AufgabeAktivieren>
+                            <Expanded>true</Expanded>
+                        </Entscheidungszweig>
+                        <Expanded>true</Expanded>
+                    </Entscheidungselement>
+                    <Expanded>true</Expanded>
+                </Startelement>
+            </Workflowdefinition>
+        </Vorgangsworkflow>
+        <AbschlussWorkflow Id="505729924841700">
+            <Startelement Id="36955917732982">
+                <Active>true</Active>
+                <Expanded>true</Expanded>
+            </Startelement>
+        </AbschlussWorkflow>
+        <AdHocWorkflow Id="1201519376066403" Name="Neuen NISV Account anlegen">
+            <Ausfuehrungsbedingung/>
+            <Beschreibung>nur bei erstmaliger Nutzung des Prozesses</Beschreibung>
+            <Typ>Ereignis</Typ>
+            <Workflowdefinition Id="4080094338928320">
+                <Startelement Id="1680793011819024">
+                    <Active>true</Active>
+                    <AufgabeAktivieren Id="-1455140006">
+                        <Active>true</Active>
+                        <EreignisseAusloesenSystemaufgabe>
+                            <Name>Neuen NISV Account anlegen</Name>
+                            <Standardfaelligkeit/>
+                            <Zustaendigkeit/>
+                            <Ausfuehrungsbedingung/>
+                            <AusfuherungNurInZustaendigerOeErlaubt>false</AusfuherungNurInZustaendigerOeErlaubt>
+                            <DokumenteWeiterleitenRegel/>
+                            <Ereignis>Neuen NISV Account anlegen</Ereignis>
+                            <MitAktuellemVorgang>false</MitAktuellemVorgang>
+                            <MitHauptvorgang>true</MitHauptvorgang>
+                            <MitUntervorgaengen>false</MitUntervorgaengen>
+                            <Nachgelagert>false</Nachgelagert>
+                        </EreignisseAusloesenSystemaufgabe>
+                    </AufgabeAktivieren>
+                    <Expanded>true</Expanded>
+                </Startelement>
+            </Workflowdefinition>
+        </AdHocWorkflow>
+        <AdHocWorkflow Id="436210139126054" Name="Neuen anonymen NISV Account anlegen">
+            <Ausfuehrungsbedingung/>
+            <Beschreibung>bei anonymen Login</Beschreibung>
+            <Typ>Ereignis</Typ>
+            <Workflowdefinition Id="117217886979">
+                <Startelement Id="326420639448840">
+                    <Active>true</Active>
+                    <AufgabeAktivieren Id="-238808278664312">
+                        <Active>true</Active>
+                        <VorgangErzeugenSystemaufgabe>
+                            <Name>Neuen anonymen NISV Account anlegen</Name>
+                            <Beschreibung>Neuen anonymen NISV Account anlegen</Beschreibung>
+                            <Standardfaelligkeit/>
+                            <Zustaendigkeit/>
+                            <Ausfuehrungsbedingung/>
+                            <AusfuherungNurInZustaendigerOeErlaubt>false</AusfuherungNurInZustaendigerOeErlaubt>
+                            <AntragsdokumentErstellen>true</AntragsdokumentErstellen>
+                            <Antragsteller/>
+                            <DokumenteWeiterleitenRegel/>
+                            <Type>Teilvorgang</Type>
+                            <Vorgangsart>NISVAcc</Vorgangsart>
+                            <Werteuebergaben>
+                                <DatenverweisZielvorgang>V.Z.Login.idParent</DatenverweisZielvorgang>
+                                <Wert>V.Ident </Wert>
+                            </Werteuebergaben>
+                            <Werteuebergaben>
+                                <DatenverweisZielvorgang>V.AS</DatenverweisZielvorgang>
+                                <Wert>V.AS</Wert>
+                            </Werteuebergaben>
+                            <Werteuebergaben>
+                                <DatenverweisZielvorgang>V.Z.Login.password</DatenverweisZielvorgang>
+                                <Wert>"anonym"</Wert>
+                            </Werteuebergaben>
+                            <ZustaendigkeitDesNeuenVorgangs/>
+                        </VorgangErzeugenSystemaufgabe>
+                    </AufgabeAktivieren>
+                    <Expanded>true</Expanded>
+                </Startelement>
+            </Workflowdefinition>
+        </AdHocWorkflow>
+    </Vorgang>
+</ns2:Bibliothek>
